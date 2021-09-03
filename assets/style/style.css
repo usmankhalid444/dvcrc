@@ -84,6 +84,16 @@ body {
   color: #1f4e79;
 }
 
+.main-slider {
+  background-color: #f7f2e0;
+  padding: 20px;
+}
+
+.main-slider img {
+  height: 300px;
+  border: 5px solid white;
+}
+
 .intro {
   background-color: #fcfaf4;
   color: #1f4e79;
@@ -155,6 +165,9 @@ body {
     overflow: hidden;
     padding: 0;
     text-align: center;
+  }
+  .main-slider img {
+    height: 120px;
   }
 }
 
