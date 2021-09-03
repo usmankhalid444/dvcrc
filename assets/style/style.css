@@ -1,0 +1,168 @@
+/** @format */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f7f2e0;
+}
+
+.header .topnav {
+  background-color: #1f4e79;
+  text-transform: uppercase;
+}
+
+.header .topnav ul li {
+  list-style: none;
+  display: inline;
+  padding-left: 15px;
+}
+
+.header .topnav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.header .topnav ul li .create-btn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  background-color: #1f4e79;
+}
+
+.header .topnav ul li .create-btn:hover {
+  background-color: #24588a;
+}
+
+.header .topnav ul li .login-btn {
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #548235;
+}
+
+.header .topnav ul li .login-btn:hover {
+  background-color: #61963e;
+}
+
+.header .main-nav {
+  text-transform: uppercase;
+  background-color: #6085b1;
+  color: white;
+}
+
+.header .main-nav .main-brand-name {
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+}
+
+.header .main-nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 15px;
+}
+
+.header .main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.main-banner {
+  margin-top: 20px;
+}
+
+.main-banner img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 80%;
+}
+
+.main-banner .mb-heading h1 {
+  text-align: center;
+  color: #1f4e79;
+}
+
+.intro {
+  background-color: #fcfaf4;
+  color: #1f4e79;
+  padding: 20px 80px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.intro p {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.action-points {
+  padding: 10px 80px;
+}
+
+.action-points button {
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #2e75b6;
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: 15px;
+}
+
+.action-points button:hover {
+  background-color: #1f4e79;
+}
+
+.action-points a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .topnav {
+    padding: 0;
+  }
+  .topnav button {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .topnav a {
+    display: none;
+  }
+  .main-nav .navbar-toggler {
+    background-color: #6085b1;
+  }
+  .main-banner h1 {
+    font-size: 1.3rem;
+  }
+  .intro {
+    padding: 0;
+    padding: 20px;
+  }
+  .intro h1 {
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+  .action-points {
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
