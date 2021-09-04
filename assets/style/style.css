@@ -48,6 +48,7 @@ body {
 }
 
 .header .offcanvas-body .login-register {
+  border-bottom: 1px solid #cccccc;
   text-align: center;
   color: black;
 }
@@ -67,7 +68,6 @@ body {
   margin-bottom: 10px;
   border-radius: 2px;
   background-color: #337ab7;
-  border-bottom: 1px solid #cccccc;
 }
 
 .header .offcanvas-body .login-register button:hover {
@@ -79,14 +79,14 @@ body {
 }
 
 .header .lr-detail h2 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: black;
 }
 
 .header .lr-detail p {
   cursor: pointer;
   margin: 6px 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #337ab7;
 }
 
@@ -185,9 +185,10 @@ body {
     text-align: center;
   }
   .main-slider {
-    padding: 0;
+    padding: 0px;
   }
   .main-slider img {
+    width: 100%;
     height: 120px;
   }
 }
