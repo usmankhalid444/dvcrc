@@ -127,8 +127,11 @@ body {
     border: none;
     outline: none;
     width: 300px;
-    padding: 15px;
+    height: 60px;
+    padding: 10px;
     &:hover {
+      transition: 0.5s;
+      transform: scale(1.1);
       background-color: $themeColor;
     }
   }
