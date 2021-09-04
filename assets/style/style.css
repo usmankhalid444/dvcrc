@@ -7,72 +7,87 @@ body {
   background-color: #f7f2e0;
 }
 
-.header .topnav {
-  background-color: #1f4e79;
-  text-transform: uppercase;
-}
-
-.header .topnav ul li {
-  list-style: none;
-  display: inline;
-  padding-left: 15px;
-}
-
-.header .topnav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.header .topnav ul li .create-btn {
-  padding: 5px 15px;
-  border-radius: 5px;
-  color: white;
-  border: 1px solid white;
-  outline: none;
-  background-color: #1f4e79;
-}
-
-.header .topnav ul li .create-btn:hover {
-  background-color: #24588a;
-}
-
-.header .topnav ul li .login-btn {
-  border-radius: 5px;
-  padding: 5px 15px;
-  color: white;
-  border: none;
-  outline: none;
-  background-color: #548235;
-}
-
-.header .topnav ul li .login-btn:hover {
-  background-color: #61963e;
+.header {
+  z-index: 1000;
 }
 
 .header .main-nav {
   text-transform: uppercase;
-  background-color: #6085b1;
+  background-color: #215aae;
   color: white;
 }
 
 .header .main-nav .main-brand-name {
   font-weight: bold;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .header .main-nav ul li {
   display: inline;
   list-style: none;
-  padding: 15px;
+  padding: 6px 15px;
 }
 
 .header .main-nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+}
+
+.header .main-nav ul li a p {
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.header .offcanvas {
+  background-color: #fcfaf4;
+}
+
+.header .offcanvas-body .login-register {
+  text-align: center;
+  color: black;
+}
+
+.header .offcanvas-body .login-register p {
+  font-size: 1.3rem;
+}
+
+.header .offcanvas-body .login-register button {
+  text-transform: capitalize;
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  width: 250px;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  background-color: #337ab7;
+  border-bottom: 1px solid #cccccc;
+}
+
+.header .offcanvas-body .login-register button:hover {
+  background-color: #286090;
+}
+
+.header .lr-detail {
+  padding: 20px;
+}
+
+.header .lr-detail h2 {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.header .lr-detail p {
+  cursor: pointer;
+  margin: 6px 0;
+  font-size: 0.7rem;
+  color: #337ab7;
 }
 
 .main-banner {
@@ -134,18 +149,16 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .topnav {
-    padding: 0;
-  }
-  .topnav button {
-    padding: 0;
-    font-size: 1rem;
-  }
-  .topnav a {
-    display: none;
-  }
   .main-nav .navbar-toggler {
-    background-color: #6085b1;
+    background-color: #215aae;
+  }
+  .main-nav ul li a p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   .main-banner h1 {
     font-size: 1.3rem;
@@ -165,6 +178,9 @@ body {
     overflow: hidden;
     padding: 0;
     text-align: center;
+  }
+  .main-slider {
+    padding: 0;
   }
   .main-slider img {
     height: 120px;

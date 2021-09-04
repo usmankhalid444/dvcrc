@@ -16,22 +16,6 @@
   <body>
     <header class="header">
       <div class="container-fluid">
-        <div class="row my-auto">
-          <div class="col-md-12 topnav">
-            <nav class="navbar">
-              <div class="container-fluid">
-                <a class="navbar-brand"></a>
-                <ul class="my-auto">
-                  <li><a href="#">help</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">contact</a></li>
-                  <li><button class="create-btn">Create Account</button></li>
-                  <li><button class="login-btn">Login</button></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
         <div class="row">
           <div class="col-md-12 main-nav">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -63,8 +47,63 @@
                     <li><a href="#">home</a></li>
                     <li><a href="#">blog</a></li>
                     <li><a href="#">about</a></li>
-
                     <li><a href="#">contact</a></li>
+                    <li>
+                      <a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                      >
+                        <p>creat account</p>
+                        <p>login</p>
+                      </a>
+
+                      <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="container login-register">
+                            <div class="row">
+                              <div class="col">
+                                <p>access your account</p>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button>login</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button>Create account</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container lr-detail">
+                            <div class="row">
+                              <div class="col">
+                                <h2>No Login Required</h2>
+                                <p>Available financing</p>
+                                <p>view Quotes</p>
+                                <p>contact us</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
