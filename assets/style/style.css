@@ -1,12 +1,5 @@
 /** @format */
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #f7f2e0;
-}
-
+/** @format */
 .header {
   z-index: 1000;
 }
@@ -33,14 +26,14 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .header .main-nav ul li a p {
   cursor: pointer;
   margin: 0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .header .offcanvas {
@@ -90,12 +83,57 @@ body {
   color: #337ab7;
 }
 
+@media only screen and (max-width: 600px) {
+  .main-nav .navbar-toggler {
+    background-color: #215aae;
+  }
+  .main-nav ul li a p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+/** @format */
+.footer {
+  font-size: 1.3rem;
+  margin-top: 25px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+/** @format */
+@font-face {
+  font-family: GothamCondensed;
+  src: url("../fonts/gothamcondensed-book-webfont.woff");
+}
+
+body {
+  font-family: GothamCondensed;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f7f2e0;
+}
+
 .main-banner {
   margin-top: 20px;
 }
 
 .main-banner .mb-heading h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   color: #1f4e79;
@@ -118,13 +156,13 @@ body {
 }
 
 .intro h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .intro p {
   margin-top: 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .action-points {
@@ -132,6 +170,7 @@ body {
 }
 
 .action-points button {
+  font-size: 1.2rem;
   margin-top: 20px;
   border-radius: 8px;
   background-color: #2e75b6;
@@ -156,22 +195,11 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .main-nav .navbar-toggler {
-    background-color: #215aae;
-  }
-  .main-nav ul li a p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
   .main-banner h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .main-banner .mb-heading h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .intro {
     padding: 0;
@@ -179,10 +207,10 @@ body {
   }
   .intro h1 {
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .intro p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .action-points {
     overflow: hidden;
@@ -198,11 +226,179 @@ body {
   }
 }
 
-.footer {
-  margin-top: 25px;
-  padding-top: 10px;
+/** @format */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f7f2e0;
+}
+
+.seller-info table th {
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  background-color: #c55a11;
   color: white;
+}
+
+.seller-info table td {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1f4e79;
+}
+
+.afr-heading {
+  font-size: 2rem;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  text-transform: capitalize;
   text-align: center;
-  background-color: black;
+  color: white;
+  background-color: #1f4e79;
+  margin-top: 50px;
+}
+
+.avail-for-rent table th {
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  background-color: #c55a11;
+  color: white;
+}
+
+.avail-for-rent table td p {
+  border: 1px solid #1f4e79;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #1f4e79;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.avail-for-rent table td p:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1f4e79;
+}
+
+.rangedata table {
+  overflow: scroll;
+  background-color: #deebf7;
+  height: 40vh;
+  font-size: 1.4rem;
+}
+
+.rangedata table th {
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  color: #1f4e79;
+}
+
+@media only screen and (max-width: 600px) {
+  .seller-info table {
+    width: 900px;
+  }
+  .avail-for-rent table {
+    width: 900px;
+  }
+  .rangedata table {
+    width: 900px;
+  }
+}
+
+/** @format */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.choose-reservation {
+  border-bottom: 5px solid #d9d9d9;
+  padding-bottom: 30px;
+}
+
+.choose-reservation .reservation-heading h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.choose-reservation .reservation-options {
+  padding: 15px;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 800px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.choose-reservation .res-option a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1f4e79;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.choose-reservation .res-option a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+  background-color: #1f4e79;
+}
+
+.res-info h1 {
+  min-height: 35vh;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.rangeSlider {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .choose-reservation .reservation-options {
+    width: auto;
+  }
+  .choose-reservation .res-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+  }
+  .choose-reservation .res-option a {
+    width: 210px;
+    padding: 5px;
+    font-size: 1.1rem;
+  }
+  .res-info h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

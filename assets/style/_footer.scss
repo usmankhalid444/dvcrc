@@ -1,0 +1,15 @@
+/** @format */
+
+.footer {
+  font-size: 1.3rem;
+  margin-top: 25px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    font-size: 1rem;
+  }
+}

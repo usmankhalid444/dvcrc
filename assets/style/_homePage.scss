@@ -1,0 +1,110 @@
+/** @format */
+
+$themeColor: #1f4e79;
+@font-face {
+  font-family: GothamCondensed;
+  src: url("../fonts/gothamcondensed-book-webfont.woff");
+}
+body {
+  font-family: GothamCondensed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f2e0;
+}
+
+.main-banner {
+  margin-top: 20px;
+
+  .mb-heading {
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      color: #1f4e79;
+    }
+  }
+}
+.main-slider {
+  background-color: #f7f2e0;
+  padding: 20px;
+  img {
+    height: 300px;
+    border: 5px solid white;
+  }
+}
+
+.intro {
+  background-color: #fcfaf4;
+  color: $themeColor;
+  padding: 20px 80px;
+  //   text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    // font-weight: bold;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 1.6rem;
+  }
+}
+.action-points {
+  padding: 10px 80px;
+  button {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #2e75b6;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    &:hover {
+      transition: 0.5s;
+      transform: scale(1.1);
+      background-color: $themeColor;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-banner {
+    // padding: 5px;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .mb-heading {
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .intro {
+    padding: 0;
+    h1 {
+      padding: 0;
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    padding: 20px;
+  }
+  .action-points {
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+  }
+  .main-slider {
+    padding: 0px;
+    img {
+      width: 100%;
+      height: 120px;
+    }
+  }
+}

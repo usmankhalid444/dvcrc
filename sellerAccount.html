@@ -10,8 +10,9 @@
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./assets/libs/rangeslider/rangeslider.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>DVC Rental Club</title>
+    <title>DVC RENTAL CLUB</title>
   </head>
   <body>
     <!-- header start -->
@@ -113,115 +114,75 @@
       </div>
     </header>
     <!-- header end -->
-    <!-- main slider start -->
-    <section class="container-fluid main-banner">
-      <div class="row">
-        <div class="col-12 mb-heading">
-          <h1 class="mt-2">WELCOME TO THE DVC RENTAL CLUB</h1>
-        </div>
-        <div class="col-md-12">
-          <!-- slider -->
-          <div class="main-slider">
-            <div class="container simg">
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="./assets/imgs/slider01.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <!-- <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="assets/imgs/slider06.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <!-- <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="assets/imgs/slider05.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <!-- <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- seller info start -->
+    <section class="seller-info overflow-auto">
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">full name</th>
+            <th scope="col">email adress</th>
+            <th scope="col">mailing adress</th>
+            <th scope="col">phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark Web</td>
+            <td>mark@dvcsales.com</td>
+            <td>1219 Belleaire Circle Orlando , FL 32804</td>
+            <td>(407) 205-111111</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    <!-- main slider end -->
-    <section class="intro container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>
-            Finally a simple solution for renting Disney Vacation Club Points
-          </h1>
-        </div>
-        <div class="col-md-12">
-          <p>
-            We have developed an easy solution for members to connect with
-            families interested in renting your Disney Vacation Club membership
-            points. We are the only Point Rental Company that is founded by
-            former Disney Vacation Club Cast Member. We know the business. Read
-            the How it works for the details and within few minutes you will
-            have your membership points or your current reservation on the
-            market to rent.
-          </p>
-          <p>
-            We have developed an easy solution for members to connect with
-            families interested in renting your Disney Vacation Club membership
-            points. We are the only Point Rental Company that is founded by
-            former Disney Vacation Club Cast Member. We know the business. Read
-            the How it works for the details and within few minutes you will
-            have your membership points or your current reservation on the
-            market to rent.
-          </p>
-        </div>
-      </div>
+    <!-- seller info end -->
+    <h1 class="afr-heading">availabe for rent</h1>
+    <section class="avail-for-rent overflow-auto">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">status</th>
+            <th scope="col">resorts</th>
+            <th scope="col">availabe points</th>
+            <th scope="col">date range from to</th>
+            <th scope="col">use year</th>
+            <th scope="col">price per month</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p>availabe</p></td>
+            <td><p>beach</p></td>
+            <td><p>50</p></td>
+            <td>
+              <p>june 30 to dec 30</p>
+            </td>
+            <td><p>feb 2021</p></td>
+            <td><p>$15.0</p></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    <section class="action-points container-fluid">
-      <div class="row text-center">
-        <div class="col-md-4">
-          <button><a href="#">I WANT TO PLAN A VACATION</a></button>
-        </div>
-        <div class="col-md-4">
-          <button><a href="#">I WANT TO RENT MY DVC POINTS</a></button>
-        </div>
-        <div class="col-md-4">
-          <button><a href="#">HOW IT WORKS</a></button>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <button><a href="#">FREQUENTLY ASKED QUESTIONS</a></button>
-        </div>
-        <div class="col-md-4">
-          <button><a href="#">WHY WE CHOSE NOT TO MAKE MONEY</a></button>
-        </div>
-        <div class="col-md-4">
-          <button><a href="#">ABOUT OUT PARENT COMPANY DVC SALES</a></button>
-        </div>
-      </div>
+    <section class="container rangeSlider ">
+      <input type="range" />
+    </section>
+    <section class="rangedata overflow-auto">
+      <table class="table mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Available</th>
+            <th scope="col">vero beach</th>
+            <th scope="col">100</th>
+            <th scope="col">june30, 2020</th>
+            <th scope="col">feb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <!-- footer start -->
     <footer class="footer container-fluid">
@@ -236,7 +197,40 @@
       </div>
     </footer>
     <!-- footer end -->
-
+    <script src="./assets/libs/jquery.min.js"></script>
+    <script src="./assets/libs/rangeslider/rangeslider.min.js"></script>
     <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
+    <script>
+      var valueBubble = '<output class="rangeslider__value-bubble" />';
+
+      function updateValueBubble(pos, value, context) {
+        pos = pos || context.position;
+        value = value || context.value;
+        var $valueBubble = $(".rangeslider__value-bubble", context.$range);
+        var tempPosition = pos + context.grabPos;
+        var position =
+          tempPosition <= context.handleDimension
+            ? context.handleDimension
+            : tempPosition >= context.maxHandlePos
+            ? context.maxHandlePos
+            : tempPosition;
+
+        if ($valueBubble.length) {
+          $valueBubble[0].style.left = Math.ceil(position) + "px";
+          $valueBubble[0].innerHTML = value;
+        }
+      }
+
+      $('input[type="range"]').rangeslider({
+        polyfill: false,
+        onInit: function () {
+          this.$range.append($(valueBubble));
+          updateValueBubble(null, null, this);
+        },
+        onSlide: function (pos, value) {
+          updateValueBubble(pos, value, this);
+        },
+      });
+    </script>
   </body>
 </html>

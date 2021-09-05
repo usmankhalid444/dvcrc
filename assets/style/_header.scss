@@ -1,0 +1,97 @@
+/** @format */
+$themeColor: #1f4e79;
+
+.header {
+  z-index: 1000;
+  .main-nav {
+    text-transform: uppercase;
+    background-color: #215aae;
+    color: white;
+
+    .main-brand-name {
+      font-weight: bold;
+      color: white;
+      font-size: 1.5rem;
+    }
+    ul {
+      li {
+        display: inline;
+        list-style: none;
+        padding: 6px 15px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-size: 1.5rem;
+          p {
+            cursor: pointer;
+            margin: 0;
+            text-align: center;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  .offcanvas {
+    background-color: #fcfaf4;
+  }
+  .offcanvas-body {
+    .login-register {
+      border-bottom: 1px solid #cccccc;
+      text-align: center;
+      color: black;
+      p {
+        font-size: 1.3rem;
+      }
+      button {
+        text-transform: capitalize;
+        margin-top: 15px;
+        padding: 10px;
+        color: white;
+        width: 250px;
+        outline: none;
+        border: none;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        background-color: #337ab7;
+        &:hover {
+          background-color: #286090;
+        }
+      }
+    }
+  }
+
+  .lr-detail {
+    padding: 20px;
+    h2 {
+      font-size: 0.9rem;
+      color: black;
+    }
+
+    p {
+      cursor: pointer;
+      margin: 6px 0;
+
+      font-size: 0.8rem;
+      color: #337ab7;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    .navbar-toggler {
+      background-color: #215aae;
+    }
+    ul {
+      li {
+        a {
+          p {
+            display: flex;
+            justify-content: left;
+          }
+        }
+      }
+    }
+  }
+}
