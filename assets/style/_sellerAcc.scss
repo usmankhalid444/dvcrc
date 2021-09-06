@@ -29,7 +29,6 @@ body {
     // font-weight: bold;
     // padding: 10px;
     margin: 0;
-    width: 100%;
     text-transform: capitalize;
     text-align: center;
     color: white;
@@ -84,6 +83,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .afr-heading {
+    font-size: 2.5rem;
+  }
   .seller-info {
     table {
       width: 900px;

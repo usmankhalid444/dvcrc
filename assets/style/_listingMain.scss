@@ -58,6 +58,11 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .choose-reservation {
+    .reservation-heading {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
     .reservation-options {
       // width: 300px;
       width: auto;

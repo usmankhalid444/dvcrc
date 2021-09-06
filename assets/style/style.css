@@ -253,7 +253,6 @@ body {
 .afr-heading h1 {
   font-size: 3.2rem;
   margin: 0;
-  width: 100%;
   text-transform: capitalize;
   text-align: center;
   color: white;
@@ -304,6 +303,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .afr-heading {
+    font-size: 2.5rem;
+  }
   .seller-info table {
     width: 900px;
   }
@@ -376,6 +378,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .choose-reservation .reservation-heading h1 {
+    font-size: 2.5rem;
+  }
   .choose-reservation .reservation-options {
     width: auto;
   }
