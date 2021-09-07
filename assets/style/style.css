@@ -260,7 +260,7 @@ body {
   margin-top: 50px;
 }
 
-.avail-for-rent table th {
+.universal-table table th {
   font-size: 1.4rem;
   outline: none;
   border: none;
@@ -269,7 +269,11 @@ body {
   color: white;
 }
 
-.avail-for-rent table td p {
+.universal-table table td {
+  padding-top: 20px;
+}
+
+.universal-table table td p {
   border: 1px solid #1f4e79;
   font-weight: bold;
   border-radius: 5px;
@@ -281,11 +285,43 @@ body {
   cursor: pointer;
 }
 
-.avail-for-rent table td p:hover {
+.universal-table table td p:hover {
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #1f4e79;
+}
+
+.universal-table table td button {
+  outline: none;
+  border: 1px solid #1f4e79;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 100px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #215aae;
+  padding: 5px;
+}
+
+.universal-table table td button:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1f4e79;
+}
+
+.universal-table table tr:hover {
+  background-color: #d7ead7;
+}
+
+.universal-table table tr:nth-child(even) {
+  background-color: #fcfaf4;
+}
+
+.universal-table table tr:nth-child(even):hover {
+  background-color: #d7ead7;
 }
 
 .rangedata table {
@@ -309,7 +345,7 @@ body {
   .seller-info table {
     width: 900px;
   }
-  .avail-for-rent table {
+  .universal-table table {
     width: 900px;
   }
   .rangedata table {
@@ -404,6 +440,88 @@ body {
   .res-info h1 {
     font-weight: bold;
     font-size: 1.5rem;
+  }
+}
+
+/** @format */
+.existing-reservation {
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.res-range {
+  padding-top: 80px;
+  margin-top: 10px;
+}
+
+.land-selection .ls-heading h1 {
+  color: #063561;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.land-selection .fav-count {
+  border-bottom: 3px solid #1f4e79;
+}
+
+.land-selection .fav-count ul li {
+  padding: 5px;
+  list-style-type: none;
+}
+
+.land-selection .fav-count ul li h2 {
+  color: #1f4e79;
+  display: inline;
+  font-size: 2.5rem;
+}
+
+.land-selection p {
+  margin-top: 10px;
+  border: 1px solid #1f4e79;
+  font-weight: bold;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #1f4e79;
+  background-color: white;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.land-selection p:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1f4e79;
+}
+
+.land-selection .res-locations p {
+  width: 200px;
+  border: 1px solid #1f4e79;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #1f4e79;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.land-selection .res-locations p:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1f4e79;
+}
+
+@media only screen and (max-width: 600px) {
+  .land-selection .ls-heading h1 {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

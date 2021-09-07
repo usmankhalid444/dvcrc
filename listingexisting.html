@@ -11,15 +11,16 @@
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./assets/libs/rangeslider/rangeslider.css" />
+
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>DVC RENTAL CLUB</title>
+    <title>Listing Existing</title>
   </head>
   <body>
     <!-- header start -->
     <header class="header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 main-nav">
+          <div class="col-md-md-12 main-nav">
             <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid">
                 <a class="navbar-brand main-brand-name" href="#"
@@ -77,16 +78,16 @@
                         <div class="offcanvas-body">
                           <div class="container login-register">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-md">
                                 <p>access your account</p>
                               </div>
                               <div class="row">
-                                <div class="col">
+                                <div class="col-md">
                                   <button>login</button>
                                 </div>
                               </div>
                               <div class="row">
-                                <div class="col">
+                                <div class="col-md">
                                   <button>Create account</button>
                                 </div>
                               </div>
@@ -94,7 +95,7 @@
                           </div>
                           <div class="container lr-detail">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-md">
                                 <h2>No Login Required</h2>
                                 <p>Available financing</p>
                                 <p>view Quotes</p>
@@ -114,82 +115,168 @@
       </div>
     </header>
     <!-- header end -->
-    <!-- seller info start -->
-    <section class="container seller-info overflow-auto">
-      <table class="table mt-4">
-        <thead>
-          <tr>
-            <th scope="col">full name</th>
-            <th scope="col">email adress</th>
-            <th scope="col">mailing adress</th>
-            <th scope="col">phone</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark Web</td>
-            <td>mark@dvcsales.com</td>
-            <td>1219 Belleaire Circle Orlando , FL 32804</td>
-            <td>(407) 205-111111</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="container choose-reservation mt-4">
+      <div class="row reservation-heading">
+        <h1>choose between</h1>
+      </div>
+      <div class="row reservation-options">
+        <div class="col-md-md-6 res-option">
+          <a href="#">existing reservation available</a>
+        </div>
+        <div class="col-md-md-6 res-option">
+          <a href="#">custom vacation</a>
+        </div>
+      </div>
     </section>
-    <!-- seller info end -->
-    <div class="afr-heading container">
-      <h1>Available for rent</h1>
+    <section class="container existing-reservation">
+      <div class="row res-range">
+        <input type="range" />
+      </div>
+      <div class="row">
+        <div class="afr-heading container">
+          <h1>existing reservation availabe for rent</h1>
+        </div>
+        <section class="container universal-table overflow-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col-md">id</th>
+                <th scope="col-md">resorts</th>
+                <th scope="col-md">room</th>
+                <th scope="col-md">view</th>
+                <th scope="col-md">points needed</th>
+                <th scope="col-md">per point</th>
+                <th scope="col-md">total</th>
+                <th scope="col-md">cheack in</th>
+                <th scope="col-md">cheack out</th>
+                <th scope="col-md">make offer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>AK101</p></td>
+                <td><p>animals</p></td>
+                <td><p>2 bedrooms</p></td>
+                <td>
+                  <p>prefered</p>
+                </td>
+                <td><p>100</p></td>
+                <td><p>$16</p></td>
+                <td><p>$1600</p></td>
+                <td><p>june 10,</p></td>
+                <td><p>dec 30,</p></td>
+                <td><button>make</button></td>
+              </tr>
+              <tr>
+                <td><p>bl101</p></td>
+                <td><p>bay lake tower</p></td>
+                <td><p>studio</p></td>
+                <td><p>standard</p></td>
+                <td><p>10</p></td>
+                <td><p>20$</p></td>
+                <td><p>200$</p></td>
+                <td><p>dec 31,</p></td>
+                <td><p>jan 1,</p></td>
+                <td><button>make</button></td>
+              </tr>
+              <tr>
+                <td><p>AK101</p></td>
+                <td><p>animals</p></td>
+                <td><p>2 bedrooms</p></td>
+                <td>
+                  <p>prefered</p>
+                </td>
+                <td><p>100</p></td>
+                <td><p>$16</p></td>
+                <td><p>$1600</p></td>
+                <td><p>june 10,</p></td>
+                <td><p>dec 30,</p></td>
+                <td><button>make</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+    <div class="container land-selection mt-4">
+      <div class="row">
+        <div class="col-md ls-heading">
+          <h1>select your favorite locations</h1>
+        </div>
+      </div>
+      <div class="row fav-count mt-5">
+        <div class="col-2">
+          <ul>
+            <li>
+              <h2>1st</h2>
+            </li>
+            <li>
+              <h2>2nd</h2>
+            </li>
+            <li>
+              <h2>3rd</h2>
+            </li>
+            <li>
+              <h2>4th</h2>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <p>boardwalk</p>
+          <p>vero beach</p>
+          <p>hilton head</p>
+        </div>
+      </div>
+      <div class="row res-locations mt-5">
+        <div class="col-md-3">
+          <p>boardwalk</p>
+        </div>
+        <div class="col-md-3">
+          <p>vero beach</p>
+        </div>
+        <div class="col-md-3">
+          <p>hilton head</p>
+        </div>
+        <div class="col-md-3">
+          <p>boardwalk</p>
+        </div>
+        <div class="col-md-3">
+          <p>grand ca</p>
+        </div>
+        <div class="col-md-3">
+          <p>hilton head</p>
+        </div>
+        <div class="col-md-3">
+          <p>boardwalk</p>
+        </div>
+        <div class="col-md-3">
+          <p>grand ca</p>
+        </div>
+        <div class="col-md-3">
+          <p>hilton head</p>
+        </div>
+        <div class="col-md-3">
+          <p>boardwalk</p>
+        </div>
+        <div class="col-md-3">
+          <p>grand ca</p>
+        </div>
+        <div class="col-md-3">
+          <p>vero beach</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md ls-heading">
+          <h1>
+            drag to sort your order of preference with your first choice on top
+          </h1>
+        </div>
+      </div>
     </div>
-    <section class="container universal-table overflow-auto">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">status</th>
-            <th scope="col">resorts</th>
-            <th scope="col">availabe points</th>
-            <th scope="col">date range from to</th>
-            <th scope="col">use year</th>
-            <th scope="col">price per month</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><p>availabe</p></td>
-            <td><p>beach</p></td>
-            <td><p>50</p></td>
-            <td>
-              <p>june 30 to dec 30</p>
-            </td>
-            <td><p>feb 2021</p></td>
-            <td><p>$15.0</p></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="container rangeSlider">
-      <input type="range" />
-    </section>
-    <section class="rangedata overflow-auto container">
-      <table class="table mt-5">
-        <thead>
-          <tr>
-            <th scope="col">Available</th>
-            <th scope="col">vero beach</th>
-            <th scope="col">100</th>
-            <th scope="col">june30, 2020</th>
-            <th scope="col">feb</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
     <!-- footer start -->
     <footer class="footer container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-12">
           <p>Copyright © 2020 DVC Rental Club, LLC All Rights Reserved</p>
           <p>
             DVC Sales, LLC is not affiliated with the Walt Disney Company or any
