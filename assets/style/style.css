@@ -141,18 +141,18 @@ body {
 
 .main-slider {
   background-color: #f7f2e0;
-  padding: 20px;
+  padding: 30px 70px;
 }
 
 .main-slider img {
-  height: 300px;
+  height: 250px;
   border: 5px solid white;
 }
 
 .intro {
   background-color: #fcfaf4;
   color: #1f4e79;
-  padding: 20px 80px;
+  padding: 20px 130px;
 }
 
 .intro h1 {
@@ -166,7 +166,7 @@ body {
 }
 
 .action-points {
-  padding: 10px 80px;
+  padding: 10px 130px;
 }
 
 .action-points button {
@@ -176,7 +176,7 @@ body {
   background-color: #2e75b6;
   border: none;
   outline: none;
-  width: 300px;
+  width: 250px;
   height: 60px;
   padding: 10px;
 }
@@ -251,17 +251,18 @@ body {
 }
 
 .afr-heading h1 {
+  width: 100%;
   font-size: 3.2rem;
-  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
   text-transform: capitalize;
   text-align: center;
   color: white;
   background-color: #1f4e79;
-  margin-top: 50px;
 }
 
 .universal-table table th {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   outline: none;
   border: none;
   text-transform: capitalize;
@@ -274,42 +275,22 @@ body {
 }
 
 .universal-table table td p {
-  border: 1px solid #1f4e79;
   font-weight: bold;
   border-radius: 5px;
   font-size: 1.2rem;
   text-transform: capitalize;
   color: #1f4e79;
-  background-color: white;
-  padding: 5px;
   cursor: pointer;
 }
 
-.universal-table table td p:hover {
-  color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #1f4e79;
-}
-
 .universal-table table td button {
-  outline: none;
-  border: 1px solid #1f4e79;
-  font-weight: bold;
+  border: none;
+  padding: none;
+  padding: 4px;
+  width: 60px;
   border-radius: 5px;
-  font-size: 1.2rem;
-  width: 100px;
-  text-transform: capitalize;
-  color: white;
-  background-color: #215aae;
-  padding: 5px;
-}
-
-.universal-table table td button:hover {
-  color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   background-color: #1f4e79;
+  color: white;
 }
 
 .universal-table table tr:hover {
@@ -340,13 +321,14 @@ body {
 
 @media only screen and (max-width: 600px) {
   .afr-heading {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .seller-info table {
-    width: 900px;
+    width: 800px;
   }
   .universal-table table {
-    width: 900px;
+    margin: 0;
+    padding: 0;
   }
   .rangedata table {
     width: 900px;
@@ -361,6 +343,10 @@ body {
           box-sizing: border-box;
 }
 
+.container {
+  width: 70%;
+}
+
 .choose-reservation {
   border-bottom: 5px solid #d9d9d9;
   padding-bottom: 30px;
@@ -370,14 +356,13 @@ body {
   color: #063561;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .choose-reservation .reservation-options {
   padding: 15px;
   border: 1px solid black;
   margin: 0 auto;
-  width: 800px;
   border-radius: 12px;
   background-color: white;
 }
@@ -405,7 +390,7 @@ body {
 .res-info h1 {
   min-height: 35vh;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 
 .rangeSlider {
@@ -455,7 +440,7 @@ body {
 
 .land-selection .ls-heading h1 {
   color: #063561;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: capitalize;
   text-align: center;
 }
@@ -465,13 +450,12 @@ body {
 }
 
 .land-selection .fav-count ul li {
-  padding: 5px;
+  padding: 5px 0;
   list-style-type: none;
 }
 
 .land-selection .fav-count ul li h2 {
   color: #1f4e79;
-  display: inline;
   font-size: 2.5rem;
 }
 
@@ -479,8 +463,7 @@ body {
   margin-top: 10px;
   border: 1px solid #1f4e79;
   font-weight: bold;
-  width: 200px;
-  margin-left: 50px;
+  width: 160px;
   border-radius: 5px;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -492,27 +475,6 @@ body {
 }
 
 .land-selection p:hover {
-  color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #1f4e79;
-}
-
-.land-selection .res-locations p {
-  width: 200px;
-  border: 1px solid #1f4e79;
-  font-weight: bold;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  color: #1f4e79;
-  background-color: white;
-  padding: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.land-selection .res-locations p:hover {
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;

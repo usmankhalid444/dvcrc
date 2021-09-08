@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #f7f2e0;
 }
+
 .seller-info {
   table {
     th {
@@ -25,21 +26,20 @@ body {
 }
 .afr-heading {
   h1 {
+    width: 100%;
     font-size: 3.2rem;
-    // font-weight: bold;
-    // padding: 10px;
-    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
     text-transform: capitalize;
     text-align: center;
     color: white;
     background-color: #1f4e79;
-    margin-top: 50px;
   }
 }
 .universal-table {
   table {
     th {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       outline: none;
       border: none;
       text-transform: capitalize;
@@ -49,38 +49,22 @@ body {
     td {
       padding-top: 20px;
       p {
-        border: 1px solid #1f4e79;
         font-weight: bold;
         border-radius: 5px;
         font-size: 1.2rem;
         text-transform: capitalize;
         color: #1f4e79;
-        background-color: white;
-        padding: 5px;
 
         cursor: pointer;
-        &:hover {
-          color: white;
-          transition: 0.5s;
-          background-color: #1f4e79;
-        }
       }
       button {
-        outline: none;
-        border: 1px solid #1f4e79;
-        font-weight: bold;
+        border: none;
+        padding: none;
+        padding: 4px;
+        width: 60px;
         border-radius: 5px;
-        font-size: 1.2rem;
-        width: 100px;
-        text-transform: capitalize;
+        background-color: #1f4e79;
         color: white;
-        background-color: #215aae;
-        padding: 5px;
-        &:hover {
-          color: white;
-          transition: 0.5s;
-          background-color: #1f4e79;
-        }
       }
     }
     tr {
@@ -113,16 +97,17 @@ body {
 
 @media only screen and (max-width: 600px) {
   .afr-heading {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .seller-info {
     table {
-      width: 900px;
+      width: 800px;
     }
   }
   .universal-table {
     table {
-      width: 900px;
+      margin: 0;
+      padding: 0;
     }
   }
   .rangedata {
