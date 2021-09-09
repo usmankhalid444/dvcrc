@@ -8,17 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css"
+    />
+    <link
+      rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>DVC RENTAL CLUB</title>
+    <title>listing custom</title>
   </head>
   <body>
     <!-- header start -->
     <header class="header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 main-nav">
+          <div class="col-md-md-12 main-nav">
             <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid">
                 <a class="navbar-brand main-brand-name" href="#"
@@ -76,16 +84,16 @@
                         <div class="offcanvas-body">
                           <div class="container login-register">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-md">
                                 <p>access your account</p>
                               </div>
                               <div class="row">
-                                <div class="col">
+                                <div class="col-md">
                                   <button>login</button>
                                 </div>
                               </div>
                               <div class="row">
-                                <div class="col">
+                                <div class="col-md">
                                   <button>Create account</button>
                                 </div>
                               </div>
@@ -93,7 +101,7 @@
                           </div>
                           <div class="container lr-detail">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-md">
                                 <h2>No Login Required</h2>
                                 <p>Available financing</p>
                                 <p>view Quotes</p>
@@ -122,26 +130,82 @@
           <a href="listingexisting.html">existing reservation available</a>
         </div>
         <div class="col-md-6 res-option">
-          <a href="listingcustom.html">custom vacation</a>
+          <a
+            href="listingcustom.html"
+            style="background-color: #063561; color: white"
+            >custom vacation</a
+          >
         </div>
       </div>
     </section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 mt-5 res-info">
-          <h1>
-            Select a choice above to see existing reservations available for
-            rent or to create a custom vacation request to submit to a member.
-          </h1>
+    <section class="listingcustom container">
+      <div class="row cv-heading mt-5">
+        <h1>custom vacation request</h1>
+        <p>
+          Select the vacation you want and we will find a member to reserve
+          those dates for you.
+        </p>
+      </div>
+      <div class="row cv-points">
+        <div class="col-md-6">
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h2>check in</h2>
+              <p>july 20, 2021</p>
+            </div>
+            <div class="col-md-6">
+              <h2>check out</h2>
+              <p>july 20, 2021</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-5"><h2>resort</h2></div>
+            <div class="col-md-7">
+              <p>animal</p>
+              <p>baylake</p>
+              <p>beach club</p>
+              <br />
+              <br />
+              <p>broad walk</p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-5"><h2>room type</h2></div>
+            <div class="col-md-7">
+              <p>one bedroom</p>
+              <p>two bedroom</p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-5"><h2>view</h2></div>
+            <div class="col-md-7">
+              <p>prefered</p>
+              <p>standred</p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-8"><h2>points required</h2></div>
+            <div class="col-md-4"><p>150-200</p></div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-9"><h2>home resort priority required</h2></div>
+            <div class="col-md-2"><p>yes</p></div>
+          </div>
+        </div>
+
+        <div class="col-6 mt-5 calander">
+          <div id="color-calendar"></div>
         </div>
       </div>
-    </div>
-    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
-
+    </section>
     <!-- footer start -->
     <footer class="footer container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-12">
           <p>Copyright © 2020 DVC Rental Club, LLC All Rights Reserved</p>
           <p>
             DVC Sales, LLC is not affiliated with the Walt Disney Company or any
@@ -151,5 +215,12 @@
       </div>
     </footer>
     <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
+    <script>
+      new Calendar({
+        id: "#color-calendar",
+      });
+    </script>
+    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>

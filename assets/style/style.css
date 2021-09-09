@@ -327,8 +327,7 @@ body {
     width: 800px;
   }
   .universal-table table {
-    margin: 0;
-    padding: 0;
+    width: 900px;
   }
   .rangedata table {
     width: 900px;
@@ -350,6 +349,7 @@ body {
 .choose-reservation {
   border-bottom: 5px solid #d9d9d9;
   padding-bottom: 30px;
+  width: 60%;
 }
 
 .choose-reservation .reservation-heading h1 {
@@ -484,6 +484,62 @@ body {
 @media only screen and (max-width: 600px) {
   .land-selection .ls-heading h1 {
     font-size: 2rem;
+  }
+}
+
+/** @format */
+.listingcustom .cv-heading h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #063561;
+}
+
+.listingcustom .cv-heading P {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #063561;
+}
+
+.listingcustom .cv-points h2 {
+  text-transform: uppercase;
+  color: #063561;
+  font-size: 1.5rem;
+}
+
+.listingcustom .cv-points p {
+  border-radius: 5px;
+  padding: 7px;
+  display: inline;
+  border: 1px solid #063561;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: #063561;
+  width: 100px;
+  cursor: pointer;
+}
+
+.listingcustom .cv-points p:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #063561;
+  color: white;
+}
+
+.divider {
+  border-radius: 5px;
+  height: 2px;
+  background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 600px) {
+  .calander {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .cv-points h2 {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
