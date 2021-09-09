@@ -201,6 +201,9 @@
           <div id="color-calendar"></div>
         </div>
       </div>
+      <div class="row submit-btn justify-content-center mt-5">
+        <button>Submit</button>
+      </div>
     </section>
     <!-- footer start -->
     <footer class="footer container-fluid">
@@ -220,6 +223,12 @@
       new Calendar({
         id: "#color-calendar",
       });
+
+      let submitfun = () => {
+        alert("information submitted sucessfullly");
+      };
+      let submit = document.querySelector(".submit-btn");
+      submit.addEventListener("click", submitfun);
     </script>
     <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>

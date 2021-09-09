@@ -38,6 +38,27 @@ $themecolor: #063561;
       }
     }
   }
+  .submit-btn {
+    button {
+      background-color: $themecolor;
+      color: white;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      border: none;
+      outline: none;
+      display: inline;
+      padding: 5px;
+      width: 100px;
+      border: 1px solid $themecolor;
+      &:hover {
+        transition: 0.5s;
+        color: $themecolor;
+        background-color: white;
+        border: 1px solid $themecolor;
+      }
+    }
+  }
 }
 .divider {
   border-radius: 5px;
