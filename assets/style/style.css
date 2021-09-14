@@ -566,4 +566,132 @@ body {
     margin-top: 20px;
   }
 }
+
+/** @format */
+.date-selection h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #063561;
+}
+
+.date-selection p {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  height: 3rem;
+  width: 11rem;
+  color: #063561;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  outline: none;
+}
+
+.date-selection p:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  z-index: -2;
+}
+
+.date-selection p:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #063561;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.date-selection p:hover {
+  color: #fff;
+}
+
+.date-selection p:hover:before {
+  width: 100%;
+}
+
+.cheackIn-out {
+  padding: 30px 30px;
+  border-radius: 5px;
+  background-color: #afcbe667;
+  text-transform: capitalize;
+}
+
+.cheackIn-out p {
+  font-size: 1.8rem;
+  color: #063561;
+}
+
+.cheackIn-out h1 {
+  color: #063561;
+}
+
+.cheackIn-out input {
+  color: #063561;
+  text-transform: capitalize;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: 2px solid #d2d1cf;
+  outline: none;
+}
+
+.cheackIn-out input::-webkit-input-placeholder {
+  color: #063561;
+}
+
+.cheackIn-out input:-ms-input-placeholder {
+  color: #063561;
+}
+
+.cheackIn-out input::-ms-input-placeholder {
+  color: #063561;
+}
+
+.cheackIn-out input::placeholder {
+  color: #063561;
+}
+
+.points-table table {
+  text-transform: capitalize;
+}
+
+.points-table table th {
+  background-color: #063561;
+  color: white;
+}
+
+.points-table tbody th {
+  background-color: #478bca;
+}
+
+.points-table tbody tr:hover {
+  background-color: #d7ead7;
+}
+
+.points-table tbody tr:nth-child(even) {
+  background-color: #fcfaf4;
+}
+
+.points-table tbody tr:nth-child(even):hover {
+  background-color: #d7ead7;
+}
 /*# sourceMappingURL=style.css.map */

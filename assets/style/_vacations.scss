@@ -1,0 +1,110 @@
+/** @format */
+
+$themecolor: #063561;
+
+.date-selection {
+  h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $themecolor;
+  }
+  p {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    height: 3rem;
+    width: 11rem;
+    color: $themecolor;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    outline: none;
+    // outline: none;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 5px;
+      z-index: -2;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      //   background-color: darken(white, 15%);
+      transition: all 0.3s;
+      background-color: $themecolor;
+      border-radius: 5px;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+.cheackIn-out {
+  padding: 30px 30px;
+  border-radius: 5px;
+  background-color: #afcbe667;
+  text-transform: capitalize;
+  p {
+    font-size: 1.8rem;
+    color: $themecolor;
+  }
+  h1 {
+    color: $themecolor;
+  }
+  input {
+    color: $themecolor;
+    text-transform: capitalize;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: 2px solid #d2d1cf;
+    outline: none;
+    &::placeholder {
+      color: $themecolor;
+    }
+  }
+}
+.points-table {
+  table {
+    text-transform: capitalize;
+    th {
+      background-color: $themecolor;
+      color: white;
+    }
+  }
+  tbody {
+    th {
+      background-color: #478bca;
+    }
+    tr {
+      &:hover {
+        background-color: #d7ead7;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #fcfaf4;
+      &:hover {
+        background-color: #d7ead7;
+      }
+    }
+  }
+}

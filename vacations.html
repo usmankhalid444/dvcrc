@@ -1,0 +1,252 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/calender/css/mobiscroll.javascript.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>DVC Rental Club</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 main-nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand main-brand-name" href="#"
+                  >DVC RENTAL club</a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li>
+                      <a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                      >
+                        <p>creat account</p>
+                        <p>login</p>
+                      </a>
+
+                      <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="container login-register">
+                            <div class="row">
+                              <div class="col">
+                                <p>access your account</p>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button>login</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button>Create account</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container lr-detail">
+                            <div class="row">
+                              <div class="col">
+                                <h2>No Login Required</h2>
+                                <p>Available financing</p>
+                                <p>view Quotes</p>
+                                <p>contact us</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <section class="date-selection container text-center">
+      <div class="row">
+        <div class="col-12 mt-4">
+          <h1>vacations</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-2">
+          <div id="inline-picker"></div>
+        </div>
+      </div>
+      <div class="row mt-5" data-aos="zoom-in-right">
+        <div class="col-md-3"><p>animal kingdom</p></div>
+        <div class="col-md-3"><p>aulani villas</p></div>
+        <div class="col-md-3"><p>bay lake tower</p></div>
+        <div class="col-md-3"><p>beach club villas</p></div>
+      </div>
+      <div class="row" data-aos="zoom-in-left">
+        <div class="col-md-3"><p>brv widerness</p></div>
+        <div class="col-md-3"><p>ccv at wilderness</p></div>
+        <div class="col-md-3"><p>disneys riviera</p></div>
+        <div class="col-md-3"><p>grand california</p></div>
+      </div>
+      <div class="row" data-aos="zoom-in-right">
+        <div class="col-md-3"><p>hilton head island</p></div>
+        <div class="col-md-3"><p>old key lodge</p></div>
+        <div class="col-md-3"><p>disneys rivera</p></div>
+        <div class="col-md-3"><p>grand california</p></div>
+      </div>
+    </section>
+    <section class="cheackIn-out container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <p>check in date</p>
+        </div>
+        <div class="col-md-8">
+          <input type="text" placeholder="june 28, 2021" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <p>check out date</p>
+        </div>
+        <div class="col-md-8">
+          <input type="text" placeholder="june 30, 2021" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4"><p>stay</p></div>
+        <div class="col-8"><p>2 nights</p></div>
+      </div>
+    </section>
+    <div class="points-table container">
+      <div class="row justify-content-center mt-3">
+        <div class="col-sm-12 col-md-8">
+          <table
+            class="table table-responsive text-center"
+            data-aos="zoom-out-down"
+          >
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">value</th>
+                <th scope="col">standard</th>
+                <th scope="col">savana</th>
+                <th scope="col">club</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">studio</th>
+                <td>48</td>
+                <td>64</td>
+                <td>76</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <th scope="row">one bedroom</th>
+                <td>62</td>
+                <td>78</td>
+                <td>100</td>
+                <td>132</td>
+              </tr>
+              <tr>
+                <th scope="row">two bed room</th>
+                <td>24</td>
+                <td>32</td>
+                <td>38</td>
+                <td>46</td>
+              </tr>
+              <tr>
+                <th scope="row">grand villa</th>
+                <td>-</td>
+                <td>194</td>
+                <td>210</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- footer start -->
+    <footer class="footer container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © 2020 DVC Rental Club, LLC All Rights Reserved</p>
+          <p>
+            DVC Sales, LLC is not affiliated with the Walt Disney Company or any
+            of its subsidaries
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="./assets/libs/calender/js/mobiscroll.javascript.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      mobiscroll.datepicker("#inline-picker", {
+        controls: ["calendar"],
+        select: "range",
+        display: "inline",
+        touchUi: true,
+      });
+    </script>
+    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
+  </body>
+</html>
