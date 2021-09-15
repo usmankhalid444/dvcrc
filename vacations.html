@@ -10,10 +10,10 @@
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="./assets/libs/calender/css/mobiscroll.javascript.min.css"
-    />
+    /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/style/style.css" />
@@ -125,10 +125,10 @@
           <h1>vacations</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 mt-2">
-          <div id="inline-picker"></div>
-        </div>
+      <div class="row justify-content-center">
+        <!-- <div class="col-10 mt-2"> -->
+        <!-- <div id="inline-picker"></div> -->
+        <!-- </div> -->
       </div>
       <div class="row mt-5" data-aos="zoom-in-right">
         <div class="col-md-3"><p>animal kingdom</p></div>
@@ -137,8 +137,8 @@
         <div class="col-md-3"><p>beach club villas</p></div>
       </div>
       <div class="row" data-aos="zoom-in-left">
-        <div class="col-md-3"><p>brv widerness</p></div>
-        <div class="col-md-3"><p>ccv at wilderness</p></div>
+        <div class="col-md-3"><p>boulder ridge</p></div>
+        <div class="col-md-3"><p>copper creek</p></div>
         <div class="col-md-3"><p>disneys riviera</p></div>
         <div class="col-md-3"><p>grand california</p></div>
       </div>
@@ -146,7 +146,13 @@
         <div class="col-md-3"><p>hilton head island</p></div>
         <div class="col-md-3"><p>old key lodge</p></div>
         <div class="col-md-3"><p>disneys rivera</p></div>
-        <div class="col-md-3"><p>grand california</p></div>
+        <div class="col-md-3"><p>grand floridian</p></div>
+      </div>
+      <div class="row" data-aos="zoom-in-left">
+        <div class="col-md-3"><p>boardWalk villas</p></div>
+        <div class="col-md-3"><p>hilton head</p></div>
+        <div class="col-md-3"><p>saratoga springs</p></div>
+        <div class="col-md-3"><p>vero beach</p></div>
       </div>
     </section>
     <section class="cheackIn-out container mt-4">
@@ -155,7 +161,7 @@
           <p>check in date</p>
         </div>
         <div class="col-md-8">
-          <input type="text" placeholder="june 28, 2021" />
+          <input type="date" placeholder="june 28, 2021" />
         </div>
       </div>
       <div class="row mt-3">
@@ -163,7 +169,7 @@
           <p>check out date</p>
         </div>
         <div class="col-md-8">
-          <input type="text" placeholder="june 30, 2021" />
+          <input type="date" placeholder="june 30, 2021" />
         </div>
       </div>
       <div class="row mt-3">
@@ -234,19 +240,20 @@
       </div>
     </footer>
     <!-- footer end -->
-    <script src="./assets/libs/calender/js/mobiscroll.javascript.min.js"></script>
+    <!-- <script src="./assets/libs/calender/js/mobiscroll.javascript.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script>
+    <!-- <script>
       mobiscroll.datepicker("#inline-picker", {
         controls: ["calendar"],
         select: "range",
+        calendarType: "month",
         display: "inline",
         touchUi: true,
       });
-    </script>
+    </script> -->
     <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>
