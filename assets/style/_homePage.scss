@@ -12,6 +12,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f7f2e0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .main-banner {
