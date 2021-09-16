@@ -577,7 +577,8 @@ body {
 .date-selection .date-picker input {
   outline: none;
   color: #063561;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
   text-align: center;
   width: 100%;
 }
