@@ -8,8 +8,15 @@ $themecolor: #063561;
     text-transform: capitalize;
     color: $themecolor;
   }
-  .v-calander {
-    height: 10vh;
+  .date-picker {
+    input {
+      outline: none;
+      color: $themecolor;
+      font-size: 1.5rem;
+      //   padding: 5px;
+      text-align: center;
+      width: 100%;
+    }
   }
   p {
     cursor: pointer;

@@ -10,16 +10,8 @@
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
-    />
-
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>DVC Rental Club</title>
+    <title>How It Works Members</title>
   </head>
   <body>
     <!-- header start -->
@@ -121,118 +113,40 @@
       </div>
     </header>
     <!-- header end -->
-    <section class="date-selection container text-center">
+    <section class="main-title mt-5 container">
       <div class="row">
-        <div class="col-12 mt-4">
-          <h1>vacations</h1>
+        <div class="col-12">
+          <h1>how it works</h1>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-10 mt-2 date-picker">
-          <input type="text" name="daterange" value="09/05/2021 - 09/15/2021" />
+      <div class="row">
+        <div class="col-md-6">
+          <a href="howitworksmembers.html">
+            <button style="background-color: #16579448">i want a rental</button>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="howitworksrenters.html"
+            ><button>i want a vacation</button>
+          </a>
         </div>
       </div>
-      <div class="row mt-5" data-aos="zoom-in-right">
-        <div class="col-md-3"><p>animal kingdom</p></div>
-        <div class="col-md-3"><p>aulani villas</p></div>
-        <div class="col-md-3"><p>bay lake tower</p></div>
-        <div class="col-md-3"><p>beach club villas</p></div>
-      </div>
-      <div class="row" data-aos="zoom-in-left">
-        <div class="col-md-3"><p>boulder ridge</p></div>
-        <div class="col-md-3"><p>copper creek</p></div>
-        <div class="col-md-3"><p>disneys riviera</p></div>
-        <div class="col-md-3"><p>grand california</p></div>
-      </div>
-      <div class="row" data-aos="zoom-in-right">
-        <div class="col-md-3"><p>hilton head island</p></div>
-        <div class="col-md-3"><p>old key lodge</p></div>
-        <div class="col-md-3"><p>disneys rivera</p></div>
-        <div class="col-md-3"><p>grand floridian</p></div>
-      </div>
-      <div class="row" data-aos="zoom-in-left">
-        <div class="col-md-3"><p>boardWalk villas</p></div>
-        <div class="col-md-3"><p>hilton head</p></div>
-        <div class="col-md-3"><p>saratoga springs</p></div>
-        <div class="col-md-3"><p>vero beach</p></div>
+      <div class="row mt-5">
+        <p>
+          The process is simple. Create an account and tell us about you and
+          your points you have to rent. Are you wanting to rent out a current
+          reservation you are not using or do you have points in your account
+          that may go to waste and you are willing to make a reservation for
+          paying guest? We will need to know the dates when the points have to
+          be used by. We want to make sure your points to not expire.
+        </p>
       </div>
     </section>
-    <section class="cheackIn-out container mt-4">
-      <div class="row">
-        <div class="col-md-4">
-          <p>check in date</p>
-        </div>
-        <div class="col-md-8">
-          <input type="date" placeholder="june 28, 2021" />
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-md-4">
-          <p>check out date</p>
-        </div>
-        <div class="col-md-8">
-          <input type="date" placeholder="june 30, 2021" />
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-4"><p>stay</p></div>
-        <div class="col-8"><p>2 nights</p></div>
-      </div>
-    </section>
-    <div class="points-table container">
-      <div class="row justify-content-center mt-3">
-        <div class="col-sm-12 col-md-8">
-          <table
-            class="table table-responsive text-center"
-            data-aos="zoom-out-down"
-          >
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">value</th>
-                <th scope="col">standard</th>
-                <th scope="col">savana</th>
-                <th scope="col">club</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">studio</th>
-                <td>48</td>
-                <td>64</td>
-                <td>76</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <th scope="row">one bedroom</th>
-                <td>62</td>
-                <td>78</td>
-                <td>100</td>
-                <td>132</td>
-              </tr>
-              <tr>
-                <th scope="row">two bed room</th>
-                <td>24</td>
-                <td>32</td>
-                <td>38</td>
-                <td>46</td>
-              </tr>
-              <tr>
-                <th scope="row">grand villa</th>
-                <td>-</td>
-                <td>194</td>
-                <td>210</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+
     <!-- footer start -->
     <footer class="footer container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-12">
           <p>Copyright © 2020 DVC Rental Club, LLC All Rights Reserved</p>
           <p>
             DVC Sales, LLC is not affiliated with the Walt Disney Company or any
@@ -242,43 +156,5 @@
       </div>
     </footer>
     <!-- footer end -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- date range picker start -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
-    ></script>
-
-    <script>
-      $(function () {
-        $('input[name="daterange"]').daterangepicker(
-          {
-            opens: "center",
-          },
-          function (start, end, label) {
-            console.log(
-              "A new date selection was made: " +
-                start.format("YYYY-MM-DD") +
-                " to " +
-                end.format("YYYY-MM-DD")
-            );
-          }
-        );
-      });
-    </script>
-    <!-- date range picker end -->
-
-    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>
