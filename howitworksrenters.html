@@ -6,10 +6,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
+
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>How It Works Renters</title>
   </head>
@@ -127,25 +129,47 @@
         </div>
         <div class="col-md-6">
           <a href="howitworksrenters.html"
-            ><button style="background-color: #16579448">
+            ><button style="background-color: #c4d2e9">
               i want a vacation
             </button>
           </a>
         </div>
       </div>
+    </section>
+    <div class="hiw-renters container">
       <div class="row mt-5">
+        <div class="col-12">
+          <p>
+            The process is simple. Create an account and tell us about you and
+            your vacation needs. <br /><br />
+            We have two ways to help you gain a reservation at a DVC Resort:
+          </p>
+        </div>
+        <div class="col-12 hiw-option" data-aos="zoom-in-right">
+          <div class="row gx-0">
+            <div class="col-1">
+              <h1>1</h1>
+            </div>
+            <div class="col-10">
+              <p>Purchase a current resevations held by members.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 hiw-option" data-aos="zoom-in-left">
+          <div class="row">
+            <div class="col-1">
+              <h1>2</h1>
+            </div>
+            <div class="col-10">
+              <p>
+                Create a custom request. Pay a per point fee for just what you
+                want. You tell us exactally what you want and just pay for what
+                you use.
+              </p>
+            </div>
+          </div>
+        </div>
         <p>
-          The process is simple. Create an account and tell us about you and
-          your vacation needs. <br />
-          We have two ways to help you gain a reservation at a DVC Resort:
-          <br />
-
-          1 - Purchase a current resevations held by members. <br />
-          or <br />
-          2 - Create a custom request. Pay a per point fee for just what you
-          want. You tell us exactally what you want and just pay for what you
-          use. <br /><br />
-
           DVC Members do not pay the front desk cash for their rooms. The
           currency they use is Vacation Club Points. Each Disney Vacation Club
           resort has a rate chart and members pay by the night based on the room
@@ -161,8 +185,7 @@
           <a href="#"><button>CREATE</button></a>
         </div>
       </div>
-    </section>
-
+    </div>
     <!-- footer start -->
     <footer class="footer container-fluid">
       <div class="row">
@@ -176,6 +199,10 @@
       </div>
     </footer>
     <!-- footer end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>

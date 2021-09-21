@@ -724,7 +724,8 @@ body {
 }
 
 .main-title p {
-  font-size: 1.6rem;
+  text-align: center;
+  font-size: 1.4rem;
   color: #063561;
 }
 
@@ -754,6 +755,99 @@ body {
     font-size: 1.2rem;
   }
   .main-title a button {
+    width: 100%;
+  }
+}
+
+/** @format */
+.hiw-members p {
+  text-align: center;
+  color: #063561;
+  font-size: 1.3rem;
+}
+
+.hiw-members .hiw-option {
+  margin: 20px 0;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: #c4d2e9;
+  cursor: pointer;
+}
+
+.hiw-members .hiw-option h1 {
+  display: inline;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #063561;
+}
+
+.hiw-members .hiw-option p {
+  color: #063561;
+  text-align: left;
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.hiw-members .hiw-option:hover {
+  background-color: #a0bce5;
+}
+
+/** @format */
+.hiw-renters p {
+  text-align: center;
+  color: #063561;
+  font-size: 1.3rem;
+}
+
+.hiw-renters .hiw-option {
+  margin: 20px 0;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: #c4d2e9;
+  cursor: pointer;
+}
+
+.hiw-renters .hiw-option h1 {
+  display: inline;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #063561;
+}
+
+.hiw-renters .hiw-option p {
+  color: #063561;
+  text-align: left;
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.hiw-renters .hiw-option:hover {
+  background-color: #a0bce5;
+}
+
+.hiw-renters a button {
+  margin-top: 20px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 1px solid #063561;
+  padding: 5px 50px;
+  font-size: 1.5rem;
+  width: 80%;
+  color: #063561;
+  background-image: linear-gradient(45deg, #063561 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.hiw-renters a button:hover {
+  color: white;
+  background-position: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  a button {
     width: 100%;
   }
 }
