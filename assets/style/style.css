@@ -760,6 +760,10 @@ body {
 }
 
 /** @format */
+.hiw-members {
+  width: 60%;
+}
+
 .hiw-members p {
   text-align: center;
   color: #063561;
@@ -793,6 +797,10 @@ body {
 }
 
 /** @format */
+.hiw-renters {
+  width: 60%;
+}
+
 .hiw-renters p {
   text-align: center;
   color: #063561;
