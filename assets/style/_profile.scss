@@ -1,0 +1,52 @@
+/** @format */
+$themecolor: #063561;
+
+.profile {
+  h1 {
+    color: $themecolor;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+  }
+  table {
+    th {
+      background-color: #1f4e79;
+    }
+  }
+}
+.offer-receaved {
+  table {
+    th {
+      font-size: 1.1rem;
+      background-color: #9dc3e6;
+    }
+  }
+}
+
+.agrement-to-rent {
+  table {
+    th {
+      font-size: 1.1rem;
+      background-color: #7f7f7f;
+    }
+  }
+}
+.additional-btn {
+  button {
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: $themecolor;
+    font-size: 1.2rem;
+    border: 1px solid $themecolor;
+    &:hover {
+      transition: 0.5s;
+      color: white;
+      background-color: $themecolor;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+}

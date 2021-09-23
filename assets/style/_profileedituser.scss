@@ -1,0 +1,48 @@
+/** @format */
+$themecolor: #063561;
+
+.profile-edit-user {
+  text-transform: capitalize;
+  color: $themecolor;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2rem;
+    display: inline;
+  }
+  input {
+    border: 1px solid $themecolor;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: $themecolor;
+    width: 60%;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  button {
+    text-transform: capitalize;
+    border: none;
+    padding: 4px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+
+    background-color: #215aae;
+
+    &:hover {
+      background-color: #1f4e79;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .profile-edit-user {
+    input {
+      width: 100%;
+    }
+  }
+}

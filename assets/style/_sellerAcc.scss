@@ -27,7 +27,7 @@ body {
 .afr-heading {
   h1 {
     width: 100%;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     margin-top: 50px;
     margin-bottom: 0;
     text-transform: capitalize;
@@ -58,13 +58,18 @@ body {
         cursor: pointer;
       }
       button {
+        text-transform: capitalize;
         border: none;
-        padding: none;
         padding: 4px;
         width: 60px;
         border-radius: 5px;
-        background-color: #1f4e79;
         color: white;
+
+        background-color: #215aae;
+
+        &:hover {
+          background-color: #1f4e79;
+        }
       }
     }
     tr {

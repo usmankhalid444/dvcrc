@@ -1,0 +1,496 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/libs/fontawesome/css/all.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Profile member</title>
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 main-nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand main-brand-name" href="index.html"
+                  >DVC RENTAL club</a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li>
+                      <a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                      >
+                        <p>creat account</p>
+                        <p>login</p>
+                      </a>
+
+                      <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="container login-register">
+                            <div class="row">
+                              <div class="col">
+                                <p>access your account</p>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button>login</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <button>Create account</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container lr-detail">
+                            <div class="row">
+                              <div class="col">
+                                <h2>No Login Required</h2>
+                                <p>Available financing</p>
+                                <p>view Quotes</p>
+                                <p>contact us</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- profile start -->
+    <section class="profile container mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h1>my profile</h1>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 universal-table table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col-md">full name</th>
+                <th scope="col-md">email adress</th>
+                <th scope="col-md">mailing adress</th>
+                <th scope="col-md">phone number</th>
+                <th scope="col-md">action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>mary smith</p></td>
+                <td><p>randy@gmail.com</p></td>
+                <td><p>104 amis bennett rd grayslake il 60038</p></td>
+                <td><p>(847) 715-5050</p></td>
+                <td>
+                  <a href="./profileedituser.html">
+                    <button><i class="fas fa-edit"></i> edit</button>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row additional-btn mt-4">
+        <div class="col-12 text-center">
+          <button><i class="fas fa-user-edit"></i> add additional user</button>
+        </div>
+      </div>
+    </section>
+    <!-- profile end -->
+    <!-- page link start -->
+    <section class="main-title mt-5 container">
+      <div class="row">
+        <div class="col-12">
+          <h1>my goal</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#">
+            <button>i want a rental</button>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#"
+            ><button style="background-color: #c4d2e9">take a</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- page link end -->
+    <!-- existing reservation start -->
+    <section class="existing-reservation container" data-aos="zoom-in-left">
+      <div class="row">
+        <div class="afr-heading gx-0">
+          <h1>existing reservation availabe for rent</h1>
+        </div>
+      </div>
+      <div class="row universal-table table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col-md">id</th>
+              <th scope="col-md">resorts</th>
+              <th scope="col-md">room</th>
+              <th scope="col-md">view</th>
+              <th scope="col-md">points needed</th>
+              <th scope="col-md">per point</th>
+              <th scope="col-md">total</th>
+              <th scope="col-md">cheack in</th>
+              <th scope="col-md">cheack out</th>
+              <th scope="col-md">status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>AK101</p></td>
+              <td><p>animals</p></td>
+              <td><p>bedrooms</p></td>
+              <td>
+                <p>prefered</p>
+              </td>
+              <td><p>100</p></td>
+              <td><p>$16</p></td>
+              <td><p>$1600</p></td>
+              <td><p>june 10,</p></td>
+              <td><p>dec 30,</p></td>
+              <td><p>availabe</p></td>
+            </tr>
+            <tr>
+              <td><p>bl101</p></td>
+              <td><p>bay lake tower</p></td>
+              <td><p>studio</p></td>
+              <td><p>standard</p></td>
+              <td><p>10</p></td>
+              <td><p>20$</p></td>
+              <td><p>200$</p></td>
+              <td><p>dec 31,</p></td>
+              <td><p>jan 1,</p></td>
+              <td><p>availabe</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row additional-btn mt-4">
+        <div class="col-12 text-center">
+          <button>
+            <i class="fas fa-plus"></i> add additional reservation
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- existing reservation end -->
+    <!-- available points start -->
+    <div class="available-points container">
+      <div class="row">
+        <div class="afr-heading gx-0">
+          <h1 style="background-color: #2e75b6">availabe points for rent</h1>
+        </div>
+      </div>
+      <div class="row universal-table table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col-md">id</th>
+              <th scope="col-md">resorts</th>
+              <th scope="col-md">points availabe</th>
+              <th scope="col-md">asking price per point</th>
+              <th scope="col-md">cheack in</th>
+              <th scope="col-md">cheack out</th>
+              <th scope="col-md">status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>AK101</p></td>
+              <td><p>animals</p></td>
+              <td><p>10</p></td>
+              <td>
+                <p>$20</p>
+              </td>
+              <td><p>june 30</p></td>
+              <td><p>dec 30</p></td>
+              <td><p>availabe</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row additional-btn mt-4">
+        <div class="col-12 text-center">
+          <button>
+            <i class="fas fa-plus"></i> add additional points to rent
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- available points end -->
+    <!-- offer receaved start -->
+    <div class="offer-receaved container" data-aos="zoom-in-right">
+      <div class="row">
+        <div class="afr-heading gx-0">
+          <h1 style="background-color: #548235">
+            offers received to rent my points
+          </h1>
+        </div>
+      </div>
+      <div class="row universal-table table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col-md">id</th>
+              <th scope="col-md">resorts</th>
+              <th scope="col-md">points</th>
+              <th scope="col-md">asking per point</th>
+              <th scope="col-md">offer per point</th>
+              <th scope="col-md">offer price</th>
+              <th scope="col-md">cheack in</th>
+              <th scope="col-md">cheack out</th>
+              <th scope="col-md">status</th>
+              <th scope="col-md">hours left</th>
+              <th scope="col-md">action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>AK101</p></td>
+              <td><p>animals</p></td>
+              <td><p>80</p></td>
+              <td>
+                <p>$20</p>
+              </td>
+              <td>
+                <p>$18</p>
+              </td>
+              <td>
+                <p>$1600</p>
+              </td>
+              <td><p>dec 20</p></td>
+              <td><p>dec 26</p></td>
+              <td><p>offer</p></td>
+              <td><p>24</p></td>
+              <td><button>view</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- offer receaved end -->
+    <!-- agrement to rent start -->
+    <div class="agrement-to-rent container">
+      <div class="row">
+        <div class="afr-heading gx-0">
+          <h1 style="background-color: #7f6000">
+            agreements to rent my points
+          </h1>
+        </div>
+      </div>
+      <div class="row universal-table table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col-md">id</th>
+              <th scope="col-md">resorts</th>
+              <th scope="col-md">points</th>
+              <th scope="col-md">asking per point</th>
+              <th scope="col-md">offer per point</th>
+              <th scope="col-md">offer price</th>
+              <th scope="col-md">cheack in</th>
+              <th scope="col-md">cheack out</th>
+              <th scope="col-md">status</th>
+              <th scope="col-md">hours left</th>
+              <th scope="col-md">action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>AK101</p></td>
+              <td><p>animals</p></td>
+              <td><p>80</p></td>
+              <td>
+                <p>$20</p>
+              </td>
+              <td>
+                <p>$18</p>
+              </td>
+              <td>
+                <p>$1600</p>
+              </td>
+              <td><p>dec 20</p></td>
+              <td><p>dec 26</p></td>
+              <td><p>offer</p></td>
+              <td><p>24</p></td>
+              <td><button>view</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- agrement to rent end -->
+    <!-- existing reservation not available start -->
+    <section class="existing-reservation container">
+      <div class="row">
+        <div class="afr-heading gx-0">
+          <h1>
+            existing reservation <span style="color: red">NOT</span> availabe
+            for rent
+          </h1>
+        </div>
+      </div>
+      <div class="row universal-table table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col-md">id</th>
+              <th scope="col-md">resorts</th>
+              <th scope="col-md">room</th>
+              <th scope="col-md">view</th>
+              <th scope="col-md">points needed</th>
+              <th scope="col-md">per point</th>
+              <th scope="col-md">total</th>
+              <th scope="col-md">cheack in</th>
+              <th scope="col-md">cheack out</th>
+              <th scope="col-md">make offer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>AK101</p></td>
+              <td><p>animals</p></td>
+              <td><p>bedrooms</p></td>
+              <td>
+                <p>prefered</p>
+              </td>
+              <td><p>100</p></td>
+              <td><p>$16</p></td>
+              <td><p>$1600</p></td>
+              <td><p>june 10,</p></td>
+              <td><p>dec 30,</p></td>
+              <td><p>deactivate</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- existing reservation not available end -->
+    <!-- available points not available start -->
+    <div class="available-points container">
+      <div class="row">
+        <div class="afr-heading gx-0">
+          <h1 style="background-color: #2e75b6">
+            availabe points <span style="color: red">NOT</span> for rent
+          </h1>
+        </div>
+      </div>
+      <div class="row universal-table table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col-md">id</th>
+              <th scope="col-md">resorts</th>
+              <th scope="col-md">points availabe</th>
+              <th scope="col-md">asking price per point</th>
+              <th scope="col-md">cheack in</th>
+              <th scope="col-md">cheack out</th>
+              <th scope="col-md">status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>AK101</p></td>
+              <td><p>animals</p></td>
+              <td><p>10</p></td>
+              <td>
+                <p>$20</p>
+              </td>
+              <td><p>june 30</p></td>
+              <td><p>dec 30</p></td>
+              <td><p>pending</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- available points not available end -->
+
+    <!-- footer start -->
+    <footer class="footer container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright © 2020 DVC Rental Club, LLC All Rights Reserved</p>
+          <p>
+            DVC Sales, LLC is not affiliated with the Walt Disney Company or any
+            of its subsidaries
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
+  </body>
+</html>

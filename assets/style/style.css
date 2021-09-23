@@ -260,7 +260,7 @@ body {
 
 .afr-heading h1 {
   width: 100%;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   margin-top: 50px;
   margin-bottom: 0;
   text-transform: capitalize;
@@ -292,13 +292,17 @@ body {
 }
 
 .universal-table table td button {
+  text-transform: capitalize;
   border: none;
-  padding: none;
   padding: 4px;
   width: 60px;
   border-radius: 5px;
-  background-color: #1f4e79;
   color: white;
+  background-color: #215aae;
+}
+
+.universal-table table td button:hover {
+  background-color: #1f4e79;
 }
 
 .universal-table table tr:hover {
@@ -856,6 +860,96 @@ body {
 
 @media only screen and (max-width: 600px) {
   a button {
+    width: 100%;
+  }
+}
+
+/** @format */
+.profile h1 {
+  color: #063561;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.profile table th {
+  background-color: #1f4e79;
+}
+
+.offer-receaved table th {
+  font-size: 1.1rem;
+  background-color: #9dc3e6;
+}
+
+.agrement-to-rent table th {
+  font-size: 1.1rem;
+  background-color: #7f7f7f;
+}
+
+.additional-btn button {
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #063561;
+  font-size: 1.2rem;
+  border: 1px solid #063561;
+}
+
+.additional-btn button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+  background-color: #063561;
+}
+
+/** @format */
+.profile-edit-user {
+  text-transform: capitalize;
+  color: #063561;
+}
+
+.profile-edit-user h1 {
+  font-size: 2.5rem;
+}
+
+.profile-edit-user p {
+  font-size: 2rem;
+  display: inline;
+}
+
+.profile-edit-user input {
+  border: 1px solid #063561;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #063561;
+  width: 60%;
+}
+
+.profile-edit-user .row {
+  margin-top: 20px;
+}
+
+.profile-edit-user button {
+  text-transform: capitalize;
+  border: none;
+  padding: 4px;
+  width: 80px;
+  border-radius: 5px;
+  color: white;
+  background-color: #215aae;
+}
+
+.profile-edit-user button:hover {
+  background-color: #1f4e79;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-edit-user input {
     width: 100%;
   }
 }
