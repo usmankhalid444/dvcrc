@@ -27,7 +27,7 @@ body {
 .afr-heading {
   h1 {
     width: 100%;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-top: 50px;
     margin-bottom: 0;
     text-transform: capitalize;
@@ -102,7 +102,9 @@ body {
 
 @media only screen and (max-width: 600px) {
   .afr-heading {
-    font-size: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
   }
   .seller-info {
     table {
@@ -112,6 +114,9 @@ body {
   .universal-table {
     table {
       width: 900px;
+      th {
+        font-size: 1rem;
+      }
     }
   }
   .rangedata {
