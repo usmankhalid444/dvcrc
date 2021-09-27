@@ -911,6 +911,7 @@ body {
 .profile-edit-user {
   text-transform: capitalize;
   color: #063561;
+  width: 50%;
 }
 
 .profile-edit-user h1 {
@@ -918,23 +919,24 @@ body {
 }
 
 .profile-edit-user p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: inline;
 }
 
 .profile-edit-user input {
+  float: right;
   border: 1px solid #063561;
   outline: none;
   padding-left: 10px;
   border-radius: 5px;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #063561;
   width: 60%;
 }
 
 .profile-edit-user .row {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .profile-edit-user button {
@@ -953,8 +955,57 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .profile-edit-user {
+    width: 70%;
+  }
   .profile-edit-user input {
     width: 100%;
   }
+}
+
+/** @format */
+.pra-buttons {
+  width: 40%;
+}
+
+.pra-buttons button {
+  text-transform: capitalize;
+  border: none;
+  padding: 4px;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #548235;
+}
+
+.pra-buttons button:hover {
+  background-color: green;
+}
+
+.pra-buttons .co-btn {
+  background-color: #0d7fdd;
+}
+
+.pra-buttons .co-btn:hover {
+  background-color: #0d5c9c;
+}
+
+@media only screen and (max-width: 600px) {
+  .pra-buttons {
+    width: 80%;
+  }
+  .pra-buttons button {
+    padding: 2px;
+  }
+}
+
+/** @format */
+.pra-buttons .rej-btn {
+  background-color: #c00000;
+}
+
+.pra-buttons .rej-btn:hover {
+  background-color: #ec2020;
 }
 /*# sourceMappingURL=style.css.map */

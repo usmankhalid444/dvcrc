@@ -4,25 +4,27 @@ $themecolor: #063561;
 .profile-edit-user {
   text-transform: capitalize;
   color: $themecolor;
+  width: 50%;
   h1 {
     font-size: 2.5rem;
   }
   p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: inline;
   }
   input {
+    float: right;
     border: 1px solid $themecolor;
     outline: none;
     padding-left: 10px;
     border-radius: 5px;
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: $themecolor;
     width: 60%;
   }
   .row {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   button {
     text-transform: capitalize;
@@ -41,6 +43,7 @@ $themecolor: #063561;
 }
 @media only screen and (max-width: 600px) {
   .profile-edit-user {
+    width: 70%;
     input {
       width: 100%;
     }
