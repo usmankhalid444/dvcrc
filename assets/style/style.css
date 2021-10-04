@@ -97,6 +97,10 @@
   }
 }
 
+table th {
+  font-weight: normal;
+}
+
 /** @format */
 .footer {
   font-size: 1.3rem;
