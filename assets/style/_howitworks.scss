@@ -20,16 +20,15 @@ $themecolor: #063561;
       text-transform: capitalize;
       border-radius: 5px;
       border: 1px solid $themecolor;
-      padding: 5px 50px;
       font-size: 1.5rem;
-      width: 80%;
+      width: 70%;
       color: $themecolor;
       background: {
         image: linear-gradient(45deg, $themecolor 50%, transparent 50%);
         position: 100%;
         size: 400%;
       }
-      transition: all 0.8s ease-in-out;
+      transition: all 0.5s ease-in-out;
       &:hover {
         color: white;
         background-position: 0;

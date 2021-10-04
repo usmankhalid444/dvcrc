@@ -26,9 +26,7 @@ body {
 }
 .afr-heading {
   h1 {
-    width: 100%;
-    font-size: 2.5rem;
-    margin-top: 50px;
+    font-size: 1.5rem;
     margin-bottom: 0;
     text-transform: capitalize;
     text-align: center;
@@ -39,7 +37,7 @@ body {
 .universal-table {
   table {
     th {
-      font-size: 1.3rem;
+      font-size: 1rem;
       outline: none;
       border: none;
       text-transform: capitalize;
@@ -47,11 +45,11 @@ body {
       color: white;
     }
     td {
-      padding-top: 20px;
+      padding-top: 10px;
+      padding-bottom: 0;
       p {
-        font-weight: bold;
         border-radius: 5px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: capitalize;
         color: #1f4e79;
 
@@ -60,7 +58,7 @@ body {
       button {
         text-transform: capitalize;
         border: none;
-        padding: 4px;
+        padding: 3px;
         width: 60px;
         border-radius: 5px;
         color: white;
@@ -103,7 +101,7 @@ body {
 @media only screen and (max-width: 600px) {
   .afr-heading {
     h1 {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
   .seller-info {
@@ -115,7 +113,7 @@ body {
     table {
       width: 900px;
       th {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
   }

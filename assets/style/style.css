@@ -259,9 +259,7 @@ body {
 }
 
 .afr-heading h1 {
-  width: 100%;
-  font-size: 2.5rem;
-  margin-top: 50px;
+  font-size: 1.5rem;
   margin-bottom: 0;
   text-transform: capitalize;
   text-align: center;
@@ -270,7 +268,7 @@ body {
 }
 
 .universal-table table th {
-  font-size: 1.3rem;
+  font-size: 1rem;
   outline: none;
   border: none;
   text-transform: capitalize;
@@ -279,13 +277,13 @@ body {
 }
 
 .universal-table table td {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
 .universal-table table td p {
-  font-weight: bold;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: capitalize;
   color: #1f4e79;
   cursor: pointer;
@@ -294,7 +292,7 @@ body {
 .universal-table table td button {
   text-transform: capitalize;
   border: none;
-  padding: 4px;
+  padding: 3px;
   width: 60px;
   border-radius: 5px;
   color: white;
@@ -333,7 +331,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .afr-heading h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .seller-info table {
     width: 800px;
@@ -342,7 +340,7 @@ body {
     width: 900px;
   }
   .universal-table table th {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .rangedata table {
     width: 900px;
@@ -444,7 +442,6 @@ body {
 
 /** @format */
 .existing-reservation {
-  margin-top: 30px;
   border-radius: 5px;
 }
 
@@ -741,15 +738,14 @@ body {
   text-transform: capitalize;
   border-radius: 5px;
   border: 1px solid #063561;
-  padding: 5px 50px;
   font-size: 1.5rem;
-  width: 80%;
+  width: 70%;
   color: #063561;
   background-image: linear-gradient(45deg, #063561 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .main-title a button:hover {
@@ -893,7 +889,7 @@ body {
   text-transform: capitalize;
   border: none;
   outline: none;
-  padding: 5px 10px;
+  padding: 3px 5px;
   border-radius: 5px;
   color: #063561;
   font-size: 1.2rem;
