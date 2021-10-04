@@ -281,8 +281,8 @@ body {
 }
 
 .universal-table table td {
-  padding-top: 5px;
-  padding-bottom: 0;
+  padding: 0;
+  padding-top: 12px;
 }
 
 .universal-table table td p {
