@@ -8,6 +8,7 @@ $themecolor: #063561;
     text-transform: capitalize;
     color: $themecolor;
   }
+
   .date-picker {
     input {
       outline: none;
@@ -20,23 +21,23 @@ $themecolor: #063561;
     }
   }
   p {
+    margin: 0;
+    border: 1px solid $themecolor;
     cursor: pointer;
     display: inline-block;
-    padding: 0.8rem 1.2rem;
+    padding: 4px 0;
     border-radius: 5px;
-    height: 3rem;
-    width: 11rem;
+    width: 9rem;
     color: $themecolor;
     text-transform: uppercase;
     font-size: 1rem;
-    font-weight: bold;
     letter-spacing: 0.15rem;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
     outline: none;
-    // outline: none;
+    outline: none;
     &:after {
       content: "";
       position: absolute;
@@ -45,7 +46,7 @@ $themecolor: #063561;
       width: 100%;
       height: 100%;
       background-color: white;
-      border-radius: 5px;
+      // border-radius: 5px;
       z-index: -2;
     }
     &:before {
@@ -55,10 +56,9 @@ $themecolor: #063561;
       left: 0;
       width: 0%;
       height: 100%;
-      //   background-color: darken(white, 15%);
       transition: all 0.6s;
       background-color: $themecolor;
-      border-radius: 5px;
+      // border-radius: 5px;
       z-index: -1;
     }
     &:hover {
@@ -68,6 +68,12 @@ $themecolor: #063561;
       }
     }
   }
+  .selected-res {
+    color: white;
+    &:after {
+      background-color: $themecolor;
+    }
+  }
 }
 .cheackIn-out {
   padding: 30px 30px;
@@ -75,7 +81,7 @@ $themecolor: #063561;
   background-color: #afcbe667;
   text-transform: capitalize;
   p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: $themecolor;
   }
   h1 {
@@ -86,7 +92,7 @@ $themecolor: #063561;
     text-transform: capitalize;
     padding: 0 10px;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     border: 2px solid #d2d1cf;
     outline: none;
     &::placeholder {

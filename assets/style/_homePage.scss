@@ -1,6 +1,6 @@
 /** @format */
 
-$themeColor: #1f4e79;
+$themeColor: #073662;
 @font-face {
   font-family: GothamCondensed;
   src: url("../fonts/gothamcondensed-book-webfont.woff");
@@ -23,7 +23,7 @@ body {
   .mb-heading {
     h1 {
       font-size: 3rem;
-      font-weight: bold;
+      // font-weight: bold;
       text-align: center;
       color: #1f4e79;
     }
@@ -40,8 +40,8 @@ body {
 
 .intro {
   background-color: #fcfaf4;
-  color: $themeColor;
   padding: 20px 150px;
+  color: $themeColor;
   //   text-align: center;
   h1 {
     font-size: 2.5rem;
@@ -50,7 +50,7 @@ body {
   }
   p {
     margin-top: 15px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 .action-points {

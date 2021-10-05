@@ -26,9 +26,10 @@ body {
 }
 .afr-heading {
   h1 {
-    font-size: 1.5rem;
+    padding: 4px 0;
+    font-size: 1.1rem;
     margin-bottom: 0;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     color: white;
     background-color: #1f4e79;
@@ -37,18 +38,19 @@ body {
 .universal-table {
   table {
     th {
-      font-size: 1.2rem;
+      padding: 3px 5px;
+      font-size: 1rem;
       outline: none;
       border: none;
       text-transform: capitalize;
       background-color: #c55a11;
       color: white;
+      text-transform: uppercase;
     }
     td {
-      padding: 8px 0;
+      padding: 2px 5px;
       p {
         margin: 0;
-        border-radius: 5px;
         font-size: 1.1rem;
         text-transform: capitalize;
         color: #1f4e79;
@@ -59,10 +61,10 @@ body {
         text-transform: capitalize;
         border: none;
         padding: 3px;
-        width: 60px;
+        width: 50px;
         border-radius: 5px;
         color: white;
-
+        font-size: 0.9rem;
         background-color: #215aae;
 
         &:hover {

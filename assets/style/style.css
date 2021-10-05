@@ -6,12 +6,11 @@
 
 .header .main-nav {
   text-transform: uppercase;
-  background-color: #215aae;
+  background-color: #38679b;
   color: white;
 }
 
 .header .main-nav .main-brand-name {
-  font-weight: bold;
   color: white;
   font-size: 1.5rem;
 }
@@ -19,14 +18,13 @@
 .header .main-nav ul li {
   display: inline;
   list-style: none;
-  padding: 6px 15px;
+  padding: 0 15px;
 }
 
 .header .main-nav ul li a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .header .main-nav ul li a p {
@@ -146,7 +144,6 @@ body {
 
 .main-banner .mb-heading h1 {
   font-size: 3rem;
-  font-weight: bold;
   text-align: center;
   color: #1f4e79;
 }
@@ -163,8 +160,8 @@ body {
 
 .intro {
   background-color: #fcfaf4;
-  color: #1f4e79;
   padding: 20px 150px;
+  color: #073662;
 }
 
 .intro h1 {
@@ -174,7 +171,7 @@ body {
 
 .intro p {
   margin-top: 15px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .action-points {
@@ -198,7 +195,7 @@ body {
   transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: #1f4e79;
+  background-color: #073662;
 }
 
 .action-points a {
@@ -263,30 +260,32 @@ body {
 }
 
 .afr-heading h1 {
-  font-size: 1.5rem;
+  padding: 4px 0;
+  font-size: 1.1rem;
   margin-bottom: 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
   color: white;
   background-color: #1f4e79;
 }
 
 .universal-table table th {
-  font-size: 1.2rem;
+  padding: 3px 5px;
+  font-size: 1rem;
   outline: none;
   border: none;
   text-transform: capitalize;
   background-color: #c55a11;
   color: white;
+  text-transform: uppercase;
 }
 
 .universal-table table td {
-  padding: 8px 0;
+  padding: 2px 5px;
 }
 
 .universal-table table td p {
   margin: 0;
-  border-radius: 5px;
   font-size: 1.1rem;
   text-transform: capitalize;
   color: #1f4e79;
@@ -297,9 +296,10 @@ body {
   text-transform: capitalize;
   border: none;
   padding: 3px;
-  width: 60px;
+  width: 50px;
   border-radius: 5px;
   color: white;
+  font-size: 0.9rem;
   background-color: #215aae;
 }
 
@@ -600,22 +600,23 @@ body {
 }
 
 .date-selection p {
+  margin: 0;
+  border: 1px solid #063561;
   cursor: pointer;
   display: inline-block;
-  padding: 0.8rem 1.2rem;
+  padding: 4px 0;
   border-radius: 5px;
-  height: 3rem;
-  width: 11rem;
+  width: 9rem;
   color: #063561;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: bold;
   letter-spacing: 0.15rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  outline: none;
   outline: none;
 }
 
@@ -627,7 +628,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 5px;
   z-index: -2;
 }
 
@@ -641,7 +641,6 @@ body {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   background-color: #063561;
-  border-radius: 5px;
   z-index: -1;
 }
 
@@ -653,6 +652,14 @@ body {
   width: 100%;
 }
 
+.date-selection .selected-res {
+  color: white;
+}
+
+.date-selection .selected-res:after {
+  background-color: #063561;
+}
+
 .cheackIn-out {
   padding: 30px 30px;
   border-radius: 5px;
@@ -661,7 +668,7 @@ body {
 }
 
 .cheackIn-out p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #063561;
 }
 
@@ -674,7 +681,7 @@ body {
   text-transform: capitalize;
   padding: 0 10px;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border: 2px solid #d2d1cf;
   outline: none;
 }
@@ -722,13 +729,15 @@ body {
 
 /** @format */
 .main-title {
-  text-transform: capitalize;
   text-align: center;
 }
 
 .main-title h1 {
-  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
   color: #063561;
+  text-transform: uppercase;
 }
 
 .main-title p {
@@ -738,12 +747,12 @@ body {
 }
 
 .main-title a button {
-  margin-top: 20px;
-  text-transform: capitalize;
+  margin-top: 10px;
+  text-transform: uppercase;
   border-radius: 5px;
   border: 1px solid #063561;
-  font-size: 1.5rem;
-  width: 70%;
+  font-size: 1.2rem;
+  width: 80%;
   color: #063561;
   background-image: linear-gradient(45deg, #063561 50%, transparent 50%);
   background-position: 100%;
@@ -870,9 +879,9 @@ body {
 /** @format */
 .profile h1 {
   color: #063561;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 
 .profile table th {
@@ -890,13 +899,13 @@ body {
 }
 
 .additional-btn button {
-  text-transform: capitalize;
+  text-transform: uppercase;
   border: none;
   outline: none;
-  padding: 3px 5px;
+  padding: 3px 10px;
   border-radius: 5px;
   color: #063561;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: 1px solid #063561;
 }
 
@@ -907,6 +916,12 @@ body {
   background-color: #063561;
 }
 
+@media only screen and (max-width: 600px) {
+  .profile h1 {
+    font-size: 1.5rem;
+  }
+}
+
 /** @format */
 .profile-edit-user {
   text-transform: capitalize;
@@ -915,24 +930,26 @@ body {
 }
 
 .profile-edit-user h1 {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .profile-edit-user p {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   display: inline;
+  text-transform: uppercase;
 }
 
 .profile-edit-user input {
-  float: right;
   border: 1px solid #063561;
   outline: none;
+  width: 100%;
+  margin-left: 25px;
   padding-left: 10px;
   border-radius: 5px;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #063561;
-  width: 60%;
 }
 
 .profile-edit-user .row {
@@ -975,7 +992,7 @@ body {
   width: 100px;
   border-radius: 5px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: #548235;
 }
 
@@ -984,11 +1001,11 @@ body {
 }
 
 .pra-buttons .co-btn {
-  background-color: #0d7fdd;
+  background-color: #ea851c;
 }
 
 .pra-buttons .co-btn:hover {
-  background-color: #0d5c9c;
+  background-color: #ff8c11;
 }
 
 @media only screen and (max-width: 600px) {
