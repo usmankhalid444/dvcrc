@@ -1,0 +1,70 @@
+/** @format */
+
+$themeColor: #1f4e79;
+
+.package-select {
+  table {
+    th {
+      background-color: $themeColor;
+    }
+  }
+}
+.packages {
+  .package {
+    height: 440px;
+    text-transform: capitalize;
+    .row {
+      border-radius: 5px;
+      border: 1px solid #7fa9cf;
+    }
+    .p-price {
+      padding: 20px;
+      height: 150px;
+      color: white;
+      background-color: #3398db;
+      p {
+        font-size: 1.1rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    .p-info {
+      height: 250px;
+      padding: 25px 10px;
+      p {
+        font-size: 1.1rem;
+        color: $themeColor;
+      }
+    }
+    .p-sign-up {
+      height: 50px;
+      padding-bottom: 30px;
+      button {
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        background-color: #3398db;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 15px;
+        &:hover {
+          background-color: #27a5fa;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .packages {
+    // width: 60%;
+    .package {
+      .p-price {
+        height: 120px;
+      }
+      .p-info {
+        height: 200px;
+      }
+    }
+  }
+}

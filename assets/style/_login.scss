@@ -1,0 +1,16 @@
+/** @format */
+$themecolor: #063561;
+
+.login {
+  display: inline-block;
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
+  }
+  a {
+    border: 1px solid black;
+    button {
+      text-transform: capitalize;
+    }
+  }
+}

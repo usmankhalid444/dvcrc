@@ -340,9 +340,6 @@ body {
   .seller-info table {
     width: 800px;
   }
-  .universal-table table {
-    width: 900px;
-  }
   .universal-table table th {
     font-size: 0.9rem;
   }
@@ -1024,5 +1021,125 @@ body {
 
 .pra-buttons .rej-btn:hover {
   background-color: #ec2020;
+}
+
+/** @format */
+.package-select table th {
+  background-color: #1f4e79;
+}
+
+.packages .package {
+  height: 440px;
+  text-transform: capitalize;
+}
+
+.packages .package .row {
+  border-radius: 5px;
+  border: 1px solid #7fa9cf;
+}
+
+.packages .package .p-price {
+  padding: 20px;
+  height: 150px;
+  color: white;
+  background-color: #3398db;
+}
+
+.packages .package .p-price p {
+  font-size: 1.1rem;
+}
+
+.packages .package .p-price h3 {
+  font-size: 2rem;
+}
+
+.packages .package .p-info {
+  height: 250px;
+  padding: 25px 10px;
+}
+
+.packages .package .p-info p {
+  font-size: 1.1rem;
+  color: #1f4e79;
+}
+
+.packages .package .p-sign-up {
+  height: 50px;
+  padding-bottom: 30px;
+}
+
+.packages .package .p-sign-up button {
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background-color: #3398db;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 15px;
+}
+
+.packages .package .p-sign-up button:hover {
+  background-color: #27a5fa;
+}
+
+@media only screen and (max-width: 600px) {
+  .packages .package .p-price {
+    height: 120px;
+  }
+  .packages .package .p-info {
+    height: 200px;
+  }
+}
+
+/** @format */
+.h1-heading {
+  text-align: center;
+  color: #1f4e79;
+}
+
+.h1-heading h1 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 2.8rem;
+}
+
+.h1-heading p {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+
+.h1-heading .p-note {
+  width: 50%;
+  background-color: #c4d2e9;
+  border-radius: 5px;
+}
+
+.h1-heading .p-note:hover {
+  background-color: #a0bce5;
+}
+
+@media only screen and (max-width: 600px) {
+  .h1-heading .p-note {
+    width: 100%;
+  }
+}
+
+/** @format */
+.login {
+  display: inline-block;
+  text-align: center;
+}
+
+.login h1 {
+  text-transform: uppercase;
+}
+
+.login a {
+  border: 1px solid black;
+}
+
+.login a button {
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=style.css.map */

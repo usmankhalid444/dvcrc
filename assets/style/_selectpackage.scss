@@ -1,0 +1,32 @@
+/** @format */
+$themeColor: #1f4e79;
+
+.h1-heading {
+  text-align: center;
+  color: $themeColor;
+  h1 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 2.8rem;
+  }
+  p {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+  }
+  .p-note {
+    width: 50%;
+    background-color: #c4d2e9;
+    border-radius: 5px;
+    &:hover {
+      background-color: #a0bce5;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .h1-heading {
+    .p-note {
+      width: 100%;
+    }
+  }
+}
