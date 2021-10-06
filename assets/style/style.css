@@ -1199,4 +1199,39 @@ body {
 }
 
 /** @format */
+/** @format */
+.offer-price h1 {
+  color: #063561;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.offer-price p {
+  color: #063561;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.offer-price input {
+  color: #063561;
+  width: 50%;
+}
+
+.offer-price button {
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background-color: #063561;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 15px;
+}
+
+.offer-price button:hover {
+  background-color: #2972b6;
+}
+
+/** @format */
 /*# sourceMappingURL=style.css.map */

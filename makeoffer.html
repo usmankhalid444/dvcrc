@@ -10,10 +10,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
+      href="../assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>Profile renter</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <title>not making money</title>
   </head>
 
   <body>
@@ -116,79 +116,25 @@
       </div>
     </header>
     <!-- header end -->
-    <!-- profile start -->
-    <section class="profile container mt-4">
+    <div class="container h1-heading login mt-2">
       <div class="row">
-        <div class="col-12">
-          <h1>my profile</h1>
+        <h1>make offer page</h1>
+        <div class="sp-title">
+          <p class="p-note justify-content-center mt-2 text-center">
+            select the vacation you want and we will find a member to reserve
+            these dates for you
+          </p>
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-12 universal-table table-responsive">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col-md">full name</th>
-                <th scope="col-md">email adress</th>
-                <th scope="col-md">mailing adress</th>
-                <th scope="col-md">phone number</th>
-                <th scope="col-md">action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><p>mark webb</p></td>
-                <td><p>mark@dvcsales.com</p></td>
-                <td><p>1219 belleaire circle orlando, FL 32804</p></td>
-                <td><p>(407) 446-6647</p></td>
-                <td>
-                  <a href="./profileedituser.html">
-                    <button><i class="fas fa-edit"></i> edit</button>
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="row additional-btn mt-4">
-        <div class="col-12 text-center">
-          <a href="./newuser.html">
-            <button><i class="fas fa-user-plus"></i> add new user</button>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- profile end -->
-    <!-- page link start -->
-    <section class="main-title mt-4 container">
-      <div class="row">
-        <div class="col-12">
-          <h1>my goal</h1>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <a href="./profile.html">
-            <button>i want a rental</button>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="./profilerenter.html"
-            ><button style="background-color: #c4d2e9">take a vacation</button>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- page link end -->
-    <!-- my offers to rent existing reservation start -->
+    </div>
+    <!-- existing reservation start -->
     <section
       class="existing-reservation container mt-4"
       data-aos="zoom-in-left"
     >
       <div class="row">
-        <div class="afr-heading gx-0 mt-4">
-          <h1>my offers to rent an existing reservation</h1>
+        <div class="afr-heading gx-0">
+          <h1>existing reservation availabe for rent</h1>
         </div>
       </div>
       <div class="row universal-table table-responsive">
@@ -238,101 +184,32 @@
         </table>
       </div>
     </section>
-    <!-- my offer to existing reservation end -->
-    <!-- my offers to rent  points start -->
-    <div class="available-points container mt-4">
-      <div class="row">
-        <div class="afr-heading gx-0">
-          <h1 style="background-color: #2e75b6">
-            my offers to rent available points
-          </h1>
+    <!-- existing reservation end -->
+    <div class="offer-price container mt-2">
+      <div class="row"><h1>offer price</h1></div>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <div class="row"><p>per point</p></div>
+          <div class="row justify-content-center">
+            <input type="text" placeholder="$15.00" />
+          </div>
+        </div>
+        <div class="col-2">
+          <p>or</p>
+        </div>
+        <div class="col-4">
+          <div class="row"><p>per point</p></div>
+          <div class="row justify-content-center">
+            <input type="text" placeholder="$150.00" />
+          </div>
         </div>
       </div>
-      <div class="row universal-table table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col-md">id</th>
-              <th scope="col-md">resorts</th>
-              <th scope="col-md">points availabe</th>
-              <th scope="col-md">asking price per point</th>
-              <th scope="col-md">cheack in</th>
-              <th scope="col-md">cheack out</th>
-              <th scope="col-md">status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><p>AK101</p></td>
-              <td><p>animals</p></td>
-              <td><p>10</p></td>
-              <td>
-                <p>$20</p>
-              </td>
-              <td><p>june 30</p></td>
-              <td><p>dec 30</p></td>
-              <td><p>availabe</p></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="row justify-content-center text-center mt-5 mb-4">
+        <a href="./makeofferconfirmation.html">
+          <button>submit offer to the member</button>
+        </a>
       </div>
     </div>
-    <!-- my offers to rent points end -->
-    <!-- my aggrements to rent points  start -->
-    <div class="offer-receaved container mt-4" data-aos="zoom-in-right">
-      <div class="row">
-        <div class="afr-heading gx-0">
-          <h1 style="background-color: #548235">
-            my agreements to rent points
-          </h1>
-        </div>
-      </div>
-      <div class="row universal-table table-responsive mb-5">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col-md">id</th>
-              <th scope="col-md">resorts</th>
-              <th scope="col-md">points</th>
-              <th scope="col-md">asking per point</th>
-              <th scope="col-md">offer per point</th>
-              <th scope="col-md">offer price</th>
-              <th scope="col-md">cheack in</th>
-              <th scope="col-md">cheack out</th>
-              <th scope="col-md">status</th>
-              <th scope="col-md">hours left</th>
-              <th scope="col-md">action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><p>AK101</p></td>
-              <td><p>animals</p></td>
-              <td><p>80</p></td>
-              <td>
-                <p>$20</p>
-              </td>
-              <td>
-                <p>$18</p>
-              </td>
-              <td>
-                <p>$1600</p>
-              </td>
-              <td><p>dec 20</p></td>
-              <td><p>dec 26</p></td>
-              <td><p>offer</p></td>
-              <td><p>24</p></td>
-              <td>
-                <a href="./profilerenteragreement.html"
-                  ><button>view</button></a
-                >
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!-- my aggrements to rent points  end -->
 
     <!-- footer start -->
     <footer class="footer container-fluid">
@@ -352,6 +229,6 @@
       AOS.init();
     </script>
 
-    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>
