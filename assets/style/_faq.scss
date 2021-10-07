@@ -1,0 +1,15 @@
+/** @format */
+
+.faqs {
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  .accordion-button {
+    font-size: 1.1rem;
+    padding: 0.7rem 1rem;
+  }
+  .accordion-body {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+}
