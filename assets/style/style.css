@@ -1202,7 +1202,7 @@ body {
 /** @format */
 .offer-price h1 {
   color: #063561;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1216,7 +1216,7 @@ body {
 
 .offer-price input {
   color: #063561;
-  width: 50%;
+  width: 40%;
 }
 
 .offer-price button {
