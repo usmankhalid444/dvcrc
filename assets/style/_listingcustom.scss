@@ -1,17 +1,19 @@
 /** @format */
 $themecolor: #063561;
+$themeColorHover: #2e75b6;
+
 .listingcustom {
   .cv-heading {
     h1 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: $themecolor;
     }
     P {
       text-align: center;
 
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: $themecolor;
     }
   }
@@ -23,7 +25,7 @@ $themecolor: #063561;
     }
     p {
       border-radius: 5px;
-      padding: 7px;
+      padding: 5px;
       display: inline;
       border: 1px solid $themecolor;
       font-size: 1.1rem;
@@ -48,13 +50,12 @@ $themecolor: #063561;
       border: none;
       outline: none;
       display: inline;
-      padding: 5px;
-      width: 100px;
+      padding: 4px;
+      width: 90px;
       border: 1px solid $themecolor;
       &:hover {
         transition: 0.5s;
-        color: $themecolor;
-        background-color: white;
+        background-color: $themeColorHover;
         border: 1px solid $themecolor;
       }
     }

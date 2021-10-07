@@ -150,7 +150,7 @@ body {
 
 .main-slider {
   background-color: #f7f2e0;
-  padding: 30px 70px;
+  padding: 30px 120px;
 }
 
 .main-slider img {
@@ -165,13 +165,13 @@ body {
 }
 
 .intro h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 
 .intro p {
   margin-top: 15px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .action-points {
@@ -179,15 +179,14 @@ body {
 }
 
 .action-points button {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 20px;
   border-radius: 8px;
-  background-color: #2e75b6;
+  background-color: #073662;
   border: none;
   outline: none;
-  width: 250px;
-  height: 50px;
-  padding: 10px;
+  width: 230px;
+  height: 45px;
 }
 
 .action-points button:hover {
@@ -195,7 +194,7 @@ body {
   transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: #073662;
+  background-color: #2e75b6;
 }
 
 .action-points a {
@@ -367,7 +366,7 @@ body {
 }
 
 .choose-reservation .reservation-heading h1 {
-  color: #063561;
+  color: #073662;
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
@@ -386,7 +385,7 @@ body {
   display: block;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #1f4e79;
+  color: #073662;
   text-transform: capitalize;
   text-align: center;
   padding: 5px;
@@ -398,13 +397,14 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
-  background-color: #1f4e79;
+  background-color: #2e75b6;
 }
 
 .res-info h1 {
+  color: #073662;
   min-height: 35vh;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 
 .rangeSlider {
@@ -453,8 +453,8 @@ body {
 
 .land-selection .ls-heading h1 {
   color: #063561;
-  font-size: 3rem;
-  text-transform: capitalize;
+  font-size: 1.9rem;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -463,26 +463,23 @@ body {
 }
 
 .land-selection .fav-count ul li {
-  padding: 5px 0;
   list-style-type: none;
 }
 
 .land-selection .fav-count ul li h2 {
   color: #1f4e79;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .land-selection p {
-  margin-top: 10px;
   border: 1px solid #1f4e79;
-  font-weight: bold;
-  width: 160px;
+  width: 120px;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   color: #1f4e79;
   background-color: white;
-  padding: 3px;
+  padding: 2px;
   text-align: center;
   cursor: pointer;
 }
@@ -496,7 +493,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .land-selection .ls-heading h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -504,13 +501,13 @@ body {
 .listingcustom .cv-heading h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #063561;
 }
 
 .listingcustom .cv-heading P {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #063561;
 }
 
@@ -522,7 +519,7 @@ body {
 
 .listingcustom .cv-points p {
   border-radius: 5px;
-  padding: 7px;
+  padding: 5px;
   display: inline;
   border: 1px solid #063561;
   font-size: 1.1rem;
@@ -550,16 +547,15 @@ body {
   border: none;
   outline: none;
   display: inline;
-  padding: 5px;
-  width: 100px;
+  padding: 4px;
+  width: 90px;
   border: 1px solid #063561;
 }
 
 .listingcustom .submit-btn button:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #063561;
-  background-color: white;
+  background-color: #2e75b6;
   border: 1px solid #063561;
 }
 
@@ -732,7 +728,7 @@ body {
 .main-title h1 {
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 1.9rem;
+  font-size: 2rem;
   color: #063561;
   text-transform: uppercase;
 }
@@ -974,6 +970,7 @@ body {
   }
   .profile-edit-user input {
     width: 100%;
+    margin: 0;
   }
 }
 
