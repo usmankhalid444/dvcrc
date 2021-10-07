@@ -143,18 +143,20 @@ body {
 }
 
 .main-banner .mb-heading h1 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-align: center;
   color: #1f4e79;
 }
 
 .main-slider {
   background-color: #f7f2e0;
-  padding: 30px 120px;
+  padding: 20px 0;
 }
 
 .main-slider img {
-  height: 250px;
+  width: 100%;
+  max-width: 1200px;
+  height: 240px;
   border: 5px solid white;
 }
 
@@ -165,7 +167,7 @@ body {
 }
 
 .intro h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -210,7 +212,6 @@ body {
     font-size: 1.7rem;
   }
   .intro {
-    padding: 0;
     padding: 20px;
   }
   .intro h1 {
@@ -243,19 +244,8 @@ body {
   background-color: #f7f2e0;
 }
 
-.seller-info table th {
-  font-size: 1.4rem;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  background-color: #c55a11;
-  color: white;
-}
-
-.seller-info table td {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #1f4e79;
+.seller-info {
+  width: 100%;
 }
 
 .afr-heading h1 {
@@ -335,9 +325,6 @@ body {
 @media only screen and (max-width: 600px) {
   .afr-heading h1 {
     font-size: 1.2rem;
-  }
-  .seller-info table {
-    width: 800px;
   }
   .universal-table table th {
     font-size: 0.9rem;
@@ -780,9 +767,9 @@ body {
 }
 
 .hiw-members .hiw-option {
-  margin: 20px 0;
+  margin: 15px 0;
   border-radius: 3px;
-  padding: 20px;
+  padding: 5px 10px;
   background-color: #c4d2e9;
   cursor: pointer;
 }
@@ -819,7 +806,7 @@ body {
 .hiw-renters .hiw-option {
   margin: 20px 0;
   border-radius: 3px;
-  padding: 20px;
+  padding: 5px 10px;
   background-color: #c4d2e9;
   cursor: pointer;
 }
@@ -843,24 +830,18 @@ body {
 }
 
 .hiw-renters a button {
-  margin-top: 20px;
   text-transform: capitalize;
+  border: none;
+  padding: 4px;
+  width: 100px;
   border-radius: 5px;
-  border: 1px solid #063561;
-  padding: 5px 50px;
-  font-size: 1.5rem;
-  width: 80%;
-  color: #063561;
-  background-image: linear-gradient(45deg, #063561 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #215aae;
 }
 
 .hiw-renters a button:hover {
-  color: white;
-  background-position: 0;
+  background-color: #1f4e79;
 }
 
 @media only screen and (max-width: 600px) {
