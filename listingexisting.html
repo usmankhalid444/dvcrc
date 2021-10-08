@@ -6,6 +6,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- rage slider liks start -->
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <!-- rage slider liks end -->
     <link
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
@@ -115,7 +128,6 @@
     </header>
     <!-- header end -->
     <!-- choose reservation start -->
-    <!-- page link start -->
     <section class="main-title mt-3 mb-3 container">
       <div class="row">
         <div class="col-12">
@@ -135,12 +147,17 @@
         </div>
       </div>
     </section>
-    <!-- page link end -->
     <!-- choose reservation end -->
     <!-- existing reservation start -->
     <section class="existing-reservation container">
-      <div class="row res-range">
-        <input type="range" />
+      <div class="row res-range mb-5">
+        <input
+          type="text"
+          class="js-range-slider"
+          name="my_range"
+          value=""
+          id="demo_4"
+        />
       </div>
       <div class="row">
         <div class="afr-heading gx-0">
@@ -176,7 +193,9 @@
               <td><p>$1600</p></td>
               <td><p>june 10,</p></td>
               <td><p>dec 30,</p></td>
-              <td><button>make</button></td>
+              <td>
+                <a href="./makeoffer.html"><button>make</button></a>
+              </td>
             </tr>
             <tr>
               <td><p>bl101</p></td>
@@ -188,7 +207,9 @@
               <td><p>200$</p></td>
               <td><p>dec 31,</p></td>
               <td><p>jan 1,</p></td>
-              <td><button>make</button></td>
+              <td>
+                <a href="./makeoffer.html"><button>make</button></a>
+              </td>
             </tr>
             <tr>
               <td><p>AK101</p></td>
@@ -202,7 +223,9 @@
               <td><p>$1600</p></td>
               <td><p>june 10,</p></td>
               <td><p>dec 30,</p></td>
-              <td><button>make</button></td>
+              <td>
+                <a href="./makeoffer.html"><button>make</button></a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -298,6 +321,36 @@
       </div>
     </footer>
     <!-- footer end -->
+    <script>
+      var lang = "en-US";
+      var year = 2020;
+
+      function dateToTS(date) {
+        return date.valueOf();
+      }
+
+      function tsToDate(ts) {
+        var d = new Date(ts);
+
+        return d.toLocaleDateString(lang, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+      }
+
+      $("#demo_4").ionRangeSlider({
+        skin: "big",
+        type: "double",
+        grid: true,
+        min: dateToTS(new Date(year, 0, 1)),
+        max: dateToTS(new Date(year, 11, 31)),
+        from: dateToTS(new Date(year, 3, 1)),
+        to: dateToTS(new Date(year, 5, 30)),
+        drag_interval: true,
+        prettify: tsToDate,
+      });
+    </script>
     <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>

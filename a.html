@@ -10,42 +10,57 @@
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
     <title>range slider</title>
-    <style>
-      .container {
-        width: 70%;
-      }
-      .col-1 {
-        margin-top: 100px;
-        text-align: center;
-        background-color: #2e75b6;
-        text-transform: capitalize;
-        color: white;
-        font-size: 0.6rem;
-      }
-      .col-1:nth-child(even) {
-        color: #2e75b6;
-        background-color: #deebf7;
-      }
-    </style>
   </head>
   <body>
-    <div class="range-slider container">
-      <div class="row">
-        <div class="col-1">jan</div>
-        <div class="col-1">feb</div>
-        <div class="col-1">mar</div>
-        <div class="col-1">apr</div>
-        <div class="col-1">may</div>
-        <div class="col-1">jun</div>
-        <div class="col-1">jul</div>
-        <div class="col-1">aug</div>
-        <div class="col-1">sep</div>
-        <div class="col-1">oct</div>
-        <div class="col-1">nov</div>
-        <div class="col-1">dec</div>
-      </div>
-    </div>
+    <input
+      type="text"
+      class="js-range-slider"
+      name="my_range"
+      value=""
+      id="demo_4"
+    />
+    <script>
+      var lang = "en-US";
+      var year = 2018;
+
+      function dateToTS(date) {
+        return date.valueOf();
+      }
+
+      function tsToDate(ts) {
+        var d = new Date(ts);
+
+        return d.toLocaleDateString(lang, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+      }
+
+      $("#demo_4").ionRangeSlider({
+        skin: "big",
+        type: "double",
+        grid: true,
+        min: dateToTS(new Date(year, 10, 1)),
+        max: dateToTS(new Date(year, 11, 1)),
+        from: dateToTS(new Date(year, 10, 8)),
+        to: dateToTS(new Date(year, 10, 23)),
+        prettify: tsToDate,
+      });
+    </script>
     <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>

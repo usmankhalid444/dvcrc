@@ -1,11 +1,32 @@
 /** @format */
-
+$themecolor: #063561;
+$themeColorHover: #2e75b6;
 .existing-reservation {
   border-radius: 5px;
+  .res-range {
+    padding-top: 80px;
+    margin-top: 10px;
+  }
 }
-.res-range {
-  padding-top: 80px;
-  margin-top: 10px;
+.irs--big .irs-handle {
+  background: none;
+  // box-shadow: none;
+  background-color: #38679b;
+}
+.irs--big .irs-bar {
+  background: none;
+  background-color: $themeColorHover;
+}
+.irs--big .irs-handle.state_hover,
+.irs--big .irs-handle:hover {
+  background: none;
+  background-color: $themecolor;
+}
+.irs--big .irs-from,
+.irs--big .irs-to,
+.irs--big .irs-single {
+  background: none;
+  background-color: #38679b;
 }
 .land-selection {
   .ls-heading {

@@ -6,11 +6,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- rage slider liks start -->
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <!-- rage slider liks end -->
     <link
       rel="stylesheet"
       href="./assets/libs/bootstrap 5/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/libs/rangeslider/rangeslider.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>DVC RENTAL CLUB</title>
   </head>
@@ -168,7 +180,13 @@
       </table>
     </section>
     <section class="container rangeSlider">
-      <input type="range" />
+      <input
+        type="text"
+        class="js-range-slider"
+        name="my_range"
+        value=""
+        id="demo_4"
+      />
     </section>
     <section class="rangedata overflow-auto container">
       <table class="table mt-5">
@@ -200,41 +218,38 @@
         </div>
       </div>
     </footer>
+
     <!-- footer end -->
-    <script src="./assets/libs/jquery.min.js"></script>
-    <script src="./assets/libs/rangeslider/rangeslider.min.js"></script>
-    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
     <script>
-      var valueBubble = '<output class="rangeslider__value-bubble" />';
+      var lang = "en-US";
+      var year = 2020;
 
-      function updateValueBubble(pos, value, context) {
-        pos = pos || context.position;
-        value = value || context.value;
-        var $valueBubble = $(".rangeslider__value-bubble", context.$range);
-        var tempPosition = pos + context.grabPos;
-        var position =
-          tempPosition <= context.handleDimension
-            ? context.handleDimension
-            : tempPosition >= context.maxHandlePos
-            ? context.maxHandlePos
-            : tempPosition;
-
-        if ($valueBubble.length) {
-          $valueBubble[0].style.left = Math.ceil(position) + "px";
-          $valueBubble[0].innerHTML = value;
-        }
+      function dateToTS(date) {
+        return date.valueOf();
       }
 
-      $('input[type="range"]').rangeslider({
-        polyfill: false,
-        onInit: function () {
-          this.$range.append($(valueBubble));
-          updateValueBubble(null, null, this);
-        },
-        onSlide: function (pos, value) {
-          updateValueBubble(pos, value, this);
-        },
+      function tsToDate(ts) {
+        var d = new Date(ts);
+
+        return d.toLocaleDateString(lang, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+      }
+
+      $("#demo_4").ionRangeSlider({
+        skin: "big",
+        type: "double",
+        grid: true,
+        min: dateToTS(new Date(year, 0, 1)),
+        max: dateToTS(new Date(year, 11, 31)),
+        from: dateToTS(new Date(year, 3, 1)),
+        to: dateToTS(new Date(year, 5, 30)),
+        drag_interval: true,
+        prettify: tsToDate,
       });
     </script>
+    <script src="./assets/libs/bootstrap 5/js/bootstrap.min.js"></script>
   </body>
 </html>

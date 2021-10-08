@@ -82,8 +82,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .main-nav .custom-toggler.navbar-toggler {
+    border-color: #ffeef9;
+  }
   .main-nav .navbar-toggler {
-    background-color: #215aae;
+    color: white;
+  }
+  .main-nav .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .main-nav ul li a p {
     display: -webkit-box;
@@ -433,9 +440,32 @@ body {
   border-radius: 5px;
 }
 
-.res-range {
+.existing-reservation .res-range {
   padding-top: 80px;
   margin-top: 10px;
+}
+
+.irs--big .irs-handle {
+  background: none;
+  background-color: #38679b;
+}
+
+.irs--big .irs-bar {
+  background: none;
+  background-color: #2e75b6;
+}
+
+.irs--big .irs-handle.state_hover,
+.irs--big .irs-handle:hover {
+  background: none;
+  background-color: #063561;
+}
+
+.irs--big .irs-from,
+.irs--big .irs-to,
+.irs--big .irs-single {
+  background: none;
+  background-color: #38679b;
 }
 
 .land-selection .ls-heading h1 {
@@ -790,6 +820,21 @@ body {
 
 .hiw-members .hiw-option:hover {
   background-color: #a0bce5;
+}
+
+.hiw-members a button {
+  text-transform: capitalize;
+  border: none;
+  padding: 4px;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #215aae;
+}
+
+.hiw-members a button:hover {
+  background-color: #1f4e79;
 }
 
 /** @format */

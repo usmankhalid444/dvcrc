@@ -28,4 +28,20 @@
       background-color: #a0bce5;
     }
   }
+  a {
+    button {
+      text-transform: capitalize;
+      border: none;
+      padding: 4px;
+      width: 100px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      background-color: #215aae;
+
+      &:hover {
+        background-color: #1f4e79;
+      }
+    }
+  }
 }

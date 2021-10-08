@@ -80,9 +80,17 @@ $themeColor: #1f4e79;
 }
 @media only screen and (max-width: 600px) {
   .main-nav {
-    .navbar-toggler {
-      background-color: #215aae;
+    .custom-toggler.navbar-toggler {
+      border-color: rgb(255, 238, 249);
     }
+    .navbar-toggler {
+      color: white;
+      &:focus {
+        // border: 1px solid white;
+        box-shadow: none;
+      }
+    }
+
     ul {
       li {
         a {
